@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/linkmount/Makefile
+
+Package: linkmount
+Submenu: Web Servers/Proxies
+Version: 1.0.3--2
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: LinkMount - the file cloud
+Maintainer: 
+Source: linkmount-binary-1.0.3.tar.gz
+Type: ipkg
+Description:   LinkMount is used by LinkEase
+https://www.linkease.com/
+
+@@
+
+

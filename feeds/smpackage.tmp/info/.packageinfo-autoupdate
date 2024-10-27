@@ -1,0 +1,20 @@
+Source-Makefile: feeds/smpackage/autoupdate/Makefile
+
+Package: autoupdate
+Version: 1-1
+Depends: +libc +bash +jq
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Upgrade OpenWrt by one-key
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	autoupdate - One-key AutoUpdate
+
+@@
+
+

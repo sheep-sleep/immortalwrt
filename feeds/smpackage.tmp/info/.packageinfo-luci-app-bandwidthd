@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/luci-app-bandwidthd/Makefile
+
+Package: luci-app-bandwidthd
+Submenu: Luci
+Version: 1-1
+Depends: +libc +bandwidthd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Network
+Repository: base
+Title: luci for bandwidthd
+Maintainer: Alex Zhuo <1886090@gmail.com>
+Source: 
+Type: ipkg
+Description:     A luci app for bandwidthd
+Alex Zhuo <1886090@gmail.com>
+@@
+
+

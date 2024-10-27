@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-pam-diff/Makefile
+Build-Depends: node/host
+
+Package: node-pam-diff
+Submenu: Node.js
+Version: 1.2.1-1
+Depends: +libc +node +node-pixel-change
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Measure differences between pixel arrays
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: pam-diff-1.2.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Measure differences between pixel arrays extracted from pam images. Works well with node module pipe2pam to extract pam images from an ffmpeg pipe. Supported tupltypes are rgb, rgb_alpha, and grayscale. It is currently being used for a video motion detection project.
+https://www.npmjs.com/package/pam-diff
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

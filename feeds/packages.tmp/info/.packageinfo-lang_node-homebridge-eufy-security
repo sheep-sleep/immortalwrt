@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-homebridge-eufy-security/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-eufy-security
+Submenu: Node.js
+Version: 4.1.1-1
+Depends: +libc +node +node-homebridge +node-ffmpeg-for-homebridge
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Control Eufy Security from homebridge
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-eufy-security-4.1.1.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Homebridge plugin to control certain Eufy Security devices.
+https://www.npmjs.com/package/homebridge-eufy-security
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

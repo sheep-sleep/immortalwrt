@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/luci-app-UUGameAcc/Makefile
+
+Package: luci-app-UUGameAcc
+Submenu: 3. Applications
+Version: 20210806-2.13.4
+Depends: +libc +kmod-tun
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for UUGameAcc
+Maintainer: BCYDTZ <https://github.com/BCYDTZ/luci-app-UUGameAcc>
+Source: 
+Type: ipkg
+Description: LuCI Support of Simple Switch to turn UUGameAcc ON/OFF
+BCYDTZ <https://github.com/BCYDTZ/luci-app-UUGameAcc>
+@@
+
+

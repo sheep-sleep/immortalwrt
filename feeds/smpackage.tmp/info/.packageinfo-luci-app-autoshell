@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/luci-app-autoshell/Makefile
+
+Package: luci-app-autoshell
+Submenu: 3. Applications
+Version: 1.2.3-1
+Depends: +libc +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for autoshell
+Maintainer: Brukamen <169296793@qq.com>
+Source: 
+License: GPL-3.0-or-later
+Type: ipkg
+Description: LuCI support for autoshell
+Brukamen <169296793@qq.com>
+@@
+
+

@@ -1,0 +1,24 @@
+Source-Makefile: feeds/packages/lang/node-pixel-change/Makefile
+Build-Depends: node/host
+
+Package: node-pixel-change
+Submenu: Node.js
+Version: 1.1.0-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Measure differences between 2 pixels
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: pixel-change-1.1.0.tgz
+License: MIT
+Type: ipkg
+Description:  Measure differences between 2 identically sized buffer arrays of gray, rgb, or rgba pixels.
+https://www.npmjs.org/package/pixel-change
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

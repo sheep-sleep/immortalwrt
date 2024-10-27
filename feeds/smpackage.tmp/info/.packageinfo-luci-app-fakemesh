@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-fakemesh/Makefile
+
+Package: luci-app-fakemesh
+Submenu: Configuration Fake Mesh Support
+Version: 1.0.2-1
+Depends: +libc +jsonfilter +umdns +firewall4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: X
+Repository: base
+Title: LuCI Support for fakemesh
+Maintainer: Chen Minqiang <ptpt52@gmail.com>
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for fakemsh.
+Chen Minqiang <ptpt52@gmail.com>
+@@
+
+

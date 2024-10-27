@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/nanohatoled/Makefile
+
+Package: nanohatoled
+Version: 1.0.4-1
+Depends: +libc +i2c-tools +python3-pillow +python3-smbus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: Support for NanoHatOLED.
+Maintainer: vinewx <https://github.com/vinewx/NanoHatOLED>
+Source: 
+License: MIT
+Type: ipkg
+Description: OpenWrt OLED display for NanoHatOLED.
+vinewx <https://github.com/vinewx/NanoHatOLED>
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/luci-app-xray/status/Makefile
+
+Package: luci-app-xray-status
+Version: 3.4.1-1
+Depends: +libc luci-app-xray +wget
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Custom
+Category: Extra packages
+Repository: base
+Title: LuCI Support for Xray (status page)
+Maintainer: yichya <mail@yichya.dev>
+Source: 
+License: MPLv2
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for Xray (Client-side Rendered) (status page).
+yichya <mail@yichya.dev>
+@@
+
+

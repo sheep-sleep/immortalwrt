@@ -1,0 +1,24 @@
+Source-Makefile: feeds/smpackage/luci-app-autorepeater/Makefile
+
+Package: luci-app-autorepeater
+Submenu: 3. Applications
+Version: 0.2.3-2
+Depends: +libc +iwinfo +jshn +jsonfilter
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: AutoRepeater LuCI interface
+Maintainer: peter-tank
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for AutoRepeater.
+https://github.com/peter-tank/luci-app-autorepeater
+peter-tank
+@@
+
+

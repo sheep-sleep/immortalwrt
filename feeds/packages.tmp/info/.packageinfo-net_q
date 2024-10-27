@@ -1,0 +1,24 @@
+Source-Makefile: feeds/packages/net/q/Makefile
+Build-Depends: golang/host
+
+Package: q
+Version: 0.19.2-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A tiny command line DNS client.
+Maintainer: Milinda Brantini <C_A_T_T_E_R_Y@outlook.com>
+Source: q-0.19.2.tar.gz
+License: GPL-3.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH.
+https://github.com/natesales/q
+Milinda Brantini <C_A_T_T_E_R_Y@outlook.com>
+@@
+
+

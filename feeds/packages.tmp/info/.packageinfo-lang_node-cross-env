@@ -1,0 +1,27 @@
+Source-Makefile: feeds/packages/lang/node-cross-env/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-cross-env
+Submenu: Node.js
+Version: 7.0.3-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Run scripts that set and use environment variables across platforms
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: cross-env-7.0.3.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Run scripts that set and use environment variables across platforms
+https://www.npmjs.com/package/cross-env
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

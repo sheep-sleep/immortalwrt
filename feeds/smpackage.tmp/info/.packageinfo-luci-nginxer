@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-nginxer/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-nginxer
+Submenu: 3. Applications
+Version: 0.0.2
+Depends: +libc +luci-nginx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Nginxer
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description:    Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

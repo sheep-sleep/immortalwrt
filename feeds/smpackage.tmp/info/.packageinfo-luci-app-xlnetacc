@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/luci-app-xlnetacc/Makefile
+
+Package: luci-app-xlnetacc
+Submenu: 3. Applications
+Version: 1.1-1
+Depends: +libc +jshn +curl +openssl-util +luci-compat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for XLNetAcc
+Maintainer: Sense <sensec@gmail.com>
+Source: 
+License: GPLv2
+Type: ipkg
+Description: 	LuCI Support for XLNetAcc.
+Sense <sensec@gmail.com>
+@@
+
+

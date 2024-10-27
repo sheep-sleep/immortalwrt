@@ -1,0 +1,24 @@
+Source-Makefile: feeds/smpackage/LingTiGameAcc/Makefile
+
+Package: LingTiGameAcc
+Submenu: 2. GameAcc
+Version: 2023-1.7.1
+Depends: +libc +kmod-tun
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: eSir Playground
+Repository: base
+Title: LingTi Game Accelerator
+Maintainer: eSir Playground
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: LingTi Game Acc is a Game Accelerator which is paid service.
+https://github.com/esirplayground/LingTiGameAcc
+eSir Playground
+@@
+
+

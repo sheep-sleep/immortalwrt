@@ -1,0 +1,24 @@
+Source-Makefile: feeds/smpackage/mihomo/Makefile
+Build-Depends: golang/host
+
+Package: mihomo
+Version: 2024-10-20-3e966e82c793ca99e3badc84bf3f2907b100edae-3
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +curl +yq firewall4 +ip-full +kmod-inet-diag +kmod-nft-tproxy +kmod-tun
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A rule based proxy in Go.
+Maintainer: Joseph Mory <morytyann@gmail.com>
+Require-User: root:mihomo=7890
+Source: mihomo-2024-10-20-3e966e82c793ca99e3badc84bf3f2907b100edae.tar.xz
+License: MIT
+Type: ipkg
+Description:   A rule based proxy in Go.
+https://wiki.metacubex.one
+Joseph Mory <morytyann@gmail.com>
+@@
+
+

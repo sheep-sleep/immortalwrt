@@ -1,0 +1,175 @@
+#!/bin/sh
+set -e
+
+# 配置DNS
+#cat <<EOF > /etc/resolv.conf
+#search lan
+#nameserver 223.5.5.5
+#nameserver 119.29.29.29
+#EOF
+
+# 检查并设置架构
+if [ ! -f /tmp/tailscale ]; then
+    arch=$(uname -m)
+    case "$arch" in
+        i386)
+            arch=386
+            ;;
+        x86_64)
+            arch=amd64
+            ;;
+        armv7l)
+            arch=arm
+            ;;
+        aarch64 | armv8l)
+            arch=arm64
+            ;;
+        geode)
+            arch=geode
+            ;;
+        mips)
+            endianness=$(echo -n I | hexdump -o | awk '{ print (substr($2,6,1)=="1") ? "le" : "be"; exit }')
+            arch="mips$endianness"
+            ;;
+        riscv64)
+            arch=riscv64
+            ;;
+        *)
+            echo "DOWNLOAD: ----------------------------------------------------"
+            echo "当前机器的架构是${arch}${endianness}, 脚本不兼容此架构"
+            exit 1
+            ;;
+    esac
+
+    latest_version="not_available"
+    version_timeout=10
+    version_url="CH3NGYZ/tailscale-openwrt/releases/latest"
+    version_proxys="https://mirror.ghproxy.com/https://github.com
+                    https://www.ghproxy.cn/https://github.com
+                    https://www.ghproxy.cc/https://github.com
+                    https://gh-proxy.com/https://github.com
+                    https://ghproxy.cc/https://github.com
+                    https://cf.ghproxy.cc/https://github.com
+                    https://ghproxy.cn/https://github.com
+                    https://github.com"
+
+    range="1"
+
+    # 尝试获取最新版本号
+    for attempt in $range; do
+		for version_proxy in $version_proxys; do
+			version_proxy_url="$version_proxy/$version_url"
+			get_version=$(timeout $version_timeout wget -c -qO- "$version_proxy_url" | grep 已从上游同步 | head -1 | cut -d'%' -f 2)
+			if [ -n "$get_version" ]; then
+				echo "DOWNLOAD: -----------------------------------"
+				echo "通过 $version_proxy 获取版本号：$get_version"
+				echo "---------------------------------------------"
+				latest_version=$get_version
+				break 2  # 成功获取到版本号，跳出两个循环
+			else
+				echo "DOWNLOAD: ----------------------------------------------------"
+				echo "通过 $version_proxy 获取版本号为空，尝试下一个链接..."
+				echo "--------------------------------------------------------------"
+			fi
+		done
+    done
+
+    # 如果最终还是无法获取到最新版本号，使用默认版本号
+    if [ "$latest_version" = "not_available" ]; then
+		latest_version="1.70.0"
+        echo "DOWNLOAD: --------------------------------"
+        echo "获取版本号失败，使用内置版本号：$latest_version"
+        echo "------------------------------------------"
+    fi
+
+    version="${latest_version}_${arch}"
+    zip_url="CH3NGYZ/tailscale-openwrt/releases/download/${latest_version}/tailscale_${version}.tgz"
+
+    echo -e "tailscale_${version}/tailscale" > /tmp/tailscale_${version}_files.txt
+    echo -e "tailscale_${version}/tailscaled" >> /tmp/tailscale_${version}_files.txt
+
+    download_success=false
+    timeout_seconds=30
+
+    # 尝试下载并解压
+    for attempt in $range; do
+		for zip_proxy in $version_proxys; do
+    		zip_proxy_url="$zip_proxy/$zip_url"
+    		if timeout $timeout_seconds wget -c -qO- $zip_proxy_url | tar xzvf - -C /tmp -T /tmp/tailscale_${version}_files.txt > /dev/null 2>&1 ; then
+    			# 检查下载的目录中是否存在 tailscale 和 tailscaled 文件
+    			if [ -f "/tmp/tailscale_$version/tailscale" ] && [ -f "/tmp/tailscale_$version/tailscaled" ]; then
+    				download_success=true
+    				echo "DOWNLOAD: ---------------------------------"
+    				echo "通过 $zip_proxy 下载并解压成功!"
+    				echo "-------------------------------------------"
+    
+    				# 备份文件到 vpn_bp 文件夹
+    				echo "BACKUP: -----------------------------------"
+    				mkdir -p /vpn_bp  # 创建备份目录
+    				cp -r /tmp/tailscale_$version/* /vpn_bp/  # 复制内容
+    				echo "备份到 /vpn_bp 成功!"
+    				echo "-------------------------------------------"
+    				break 2  # 成功下载并解压，跳出两个循环
+    			else
+    				echo "DOWNLOAD: --------------------------------------"
+    				echo "文件缺失，下载无效，尝试下一个链接..."
+    				echo "------------------------------------------------"
+    				rm -rf "/tmp/tailscale_$version"  # 删除不完整的下载文件夹
+    			fi
+    		else
+    			echo "DOWNLOAD: --------------------------------------"
+    			echo "通过 $zip_proxy 下载失败，尝试下一个链接..."
+    			echo "------------------------------------------------"
+    		fi
+    	done
+    done
+
+	# 更新应用程序
+    if [ "$download_success" != true ]; then
+        echo "DOWNLOAD: ----------------------------------------"
+        echo "所有链接下载均失败，请检查网络或稍后再试。"
+		echo "尝试从备份文件夹恢复..."
+        echo "--------------------------------------------------"
+		# 从备份文件夹中恢复文件
+		if [ -d "/vpn_bp" ]; then
+			echo "RESTORE: ----------------------------------------"
+			echo "从备份文件夹恢复文件..."
+			cp -r /vpn_bp/* /tmp  # 从备份恢复
+			if [ -f "/tmp/tailscale" ] && [ -f "/tmp/tailscaled" ]; then
+				echo "恢复成功!"
+			else
+				echo "恢复失败，备份文件可能不完整。"
+				exit 1
+			fi
+			echo "--------------------------------------------------"
+		else
+			echo "没有找到备份文件，无法恢复。"
+			exit 1
+		fi
+	else
+		echo "下载版本${version}成功，开始更新应用 --------------------"
+		mv /tmp/tailscale_$version/tailscale /tmp
+		mv /tmp/tailscale_$version/tailscaled /tmp
+		# rm -rf /tmp/tailscale_${version}*
+		echo "------------------------------------------------"
+    fi
+
+
+	# 删除 /tmp 目录下的多余 tailscale 目录，只保留最新的一个
+	tailscale_dirs=$(find /tmp -maxdepth 1 -type d -name "tailscale_*" | sort -r)
+
+	if [ $(echo "$tailscale_dirs" | wc -l) -ge 2 ]; then
+		echo "CLEANUP: -------------------------------"
+		echo "检测到多个 tailscale 目录，删除多余的..."
+		echo "----------------------------------------"
+		
+		# 保留最新的一个，删除其他的目录
+		echo "$tailscale_dirs" | tail -n +2 | xargs rm -rf
+		
+		echo "CLEANUP: -------------------------------"
+		echo "保留最新的 tailscale 目录，清理完成。"
+		echo "----------------------------------------"
+	fi
+fi
+
+

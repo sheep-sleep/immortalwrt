@@ -1,0 +1,33 @@
+Source-Makefile: feeds/smpackage/speedtest-web/Makefile
+Build-Depends: golang/host
+
+Package: speedtest-web
+Version: 1.1.5
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: speedtest-web is a Openwrt package for speedtest-go, a Go backend for LibreSpeed
+Maintainer: 
+Source: speedtest-web-1.1.5.tar.xz
+License: LGPL-3.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	speedtest-web is a Openwrt package for speedtest-go, a Go backend for LibreSpeed
+https://github.com/librespeed/speedtest-go
+
+@@
+Config:
+config SPEEDTEST_WEB_COMPRESS_GOPROXY
+	bool "Compiling with GOPROXY proxy"
+	default n
+
+config SPEEDTEST_WEB_COMPRESS_UPX
+	bool "Compress executable files with UPX"
+	default y
+@@
+
+

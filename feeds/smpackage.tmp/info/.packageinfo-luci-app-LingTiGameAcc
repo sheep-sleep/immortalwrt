@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/luci-app-LingTiGameAcc/Makefile
+
+Package: luci-app-LingTiGameAcc
+Submenu: 2. GameAcc
+Version: 20200726-1
+Depends: +libc +LingTiGameAcc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: eSir Playground
+Repository: base
+Title: LuCI support for LingTiGameAcc
+Maintainer: eSir Playground <https://github.com/esirplayground/luci-app-LingTiGameAcc>
+Source: 
+Type: ipkg
+Description: LuCI Support of Simple Switch to turn LingTiGameAcc ON/OFF
+eSir Playground <https://github.com/esirplayground/luci-app-LingTiGameAcc>
+@@
+
+

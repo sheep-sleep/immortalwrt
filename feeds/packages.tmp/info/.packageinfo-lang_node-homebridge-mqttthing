@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-homebridge-mqttthing/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-mqttthing
+Submenu: Node.js
+Version: 1.1.47-1
+Depends: +libc +node +node-homebridge +node-mqtt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Homebridge plugin supporting various services over MQTT
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-mqttthing-1.1.47.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Homebridge MQTT-Thing is a plugin for Homebridge allowing the integration of many different accessory types using MQTT.
+https://www.npmjs.com/package/homebridge-mqttthing
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

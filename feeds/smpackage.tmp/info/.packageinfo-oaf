@@ -1,0 +1,19 @@
+Source-Makefile: feeds/smpackage/oaf/Makefile
+
+Package: kmod-oaf
+Version: <LINUX_VERSION>-
+Depends: +kmod-ipt-conntrack
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Derry Apps
+Category: Derry Apps
+Title: open app filter kernel module
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   open appfilter kernel module 
+
+@@
+
+

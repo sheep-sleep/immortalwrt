@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-homebridge-xiaomi-roborock-vacuum/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-xiaomi-roborock-vacuum
+Submenu: Node.js
+Version: 0.32.0-1
+Depends: +libc +node +node-homebridge
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Xiaomi Vacuum Cleaner plugin for Homebridge
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-xiaomi-roborock-vacuum-0.32.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Xiaomi Vacuum Cleaner - 1st (Mi Robot), 2nd (Roborock S50 + S55), 3rd Generation (Roborock S6) and S5 Max - plugin for Homebridge.
+https://www.npmjs.com/package/homebridge-xiaomi-roborock-vacuum
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

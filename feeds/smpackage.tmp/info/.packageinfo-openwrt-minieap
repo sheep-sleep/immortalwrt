@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/openwrt-minieap/Makefile
+
+Package: minieap
+Version: 0.92.1-4
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Extensible 802.1x client with Ruijie v3 (v4) plugin
+Maintainer: updateing
+Source: minieap-0.92.1.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Extensible 802.1x client with Ruijie v3 (v4) plugin
+https://github.com/updateing/minieap
+updateing
+@@
+
+

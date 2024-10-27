@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/luci-app-openvpn-server/Makefile
+
+Package: luci-app-openvpn-server
+Submenu: 3. Applications
+Version: 1.0-3
+Depends: +libc +openvpn-openssl +openvpn-easy-rsa-whisky +luci-compat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: LuCI
+Category: LuCI
+Repository: base
+Title: LuCI support for OpenVPN Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	LuCI support for OpenVPN Server.
+
+@@
+
+

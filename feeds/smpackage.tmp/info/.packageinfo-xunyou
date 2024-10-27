@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/xunyou/Makefile
+
+Package: xunyou
+Submenu: Web Servers/Proxies
+Version: 2.0.5.1-1
+Depends: +libc +coreutils-nohup
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: xunyou
+Maintainer: 
+Source: xunyou_v2.0.5.1.tar.gz
+Type: ipkg
+Description: 	xunyou
+
+@@
+
+

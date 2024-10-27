@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-tencentddns/Makefile
+
+Package: luci-app-tencentddns
+Submenu: 3. Applications
+Version: 0.2.0-1
+Depends: +libc +openssl-util +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for tencentddns
+Maintainer: tencentcloud <https://github.com/Tencent-Cloud-Plugins>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for TencentDDNS.
+tencentcloud <https://github.com/Tencent-Cloud-Plugins>
+@@
+
+

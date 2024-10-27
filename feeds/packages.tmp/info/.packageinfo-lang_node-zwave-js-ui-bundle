@@ -1,0 +1,26 @@
+Source-Makefile: feeds/packages/lang/node-zwave-js-ui-bundle/Makefile
+Build-Depends: node/host
+
+Package: node-zwave-js-ui-bundle
+Submenu: Node.js
+Version: 9.17.0-1
+Depends: +libc +node +node-bufferutil +node-utf-8-validate +node-serialport
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Z-Wave control panel UI and MQTT gateway (Web app)
+Maintainer: David Woodhouse <dwmw2@infradead.org>
+Source: zwave-js-ui-bundle-9.17.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Z-Wave control panel UI and MQTT gateway.
+ Bundled as a web app to compress file size.
+https://zwave-js.github.io/zwave-js-ui/
+David Woodhouse <dwmw2@infradead.org>
+@@
+
+

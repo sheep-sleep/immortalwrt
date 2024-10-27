@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-dnsmasq-ipset/Makefile
+
+Package: luci-app-dnsmasq-ipset
+Submenu: 3. Applications
+Version: 0.2.0-1
+Depends: +libc +dnsmasq-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for ipset feature of dnsmasq-full
+Maintainer: Qier LU <lvqier@gmail.com>
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for ipset feature of dnsmasq-full.
+Qier LU <lvqier@gmail.com>
+@@
+
+

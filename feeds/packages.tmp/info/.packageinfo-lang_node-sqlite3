@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-sqlite3/Makefile
+Build-Depends: node/host
+
+Package: node-sqlite3
+Submenu: Node.js
+Version: 5.1.7-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Asynchronous, non-blocking SQLite3 bindings
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: sqlite3-5.1.7.tgz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Asynchronous, non-blocking SQLite3 bindings for Node.js
+https://www.npmjs.org/package/sqlite3
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

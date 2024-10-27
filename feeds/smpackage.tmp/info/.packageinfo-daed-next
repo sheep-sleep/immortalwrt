@@ -1,0 +1,24 @@
+Source-Makefile: feeds/smpackage/daed-next/Makefile
+Build-Depends: golang/host bpf-headers
+
+Package: daed-next
+Submenu: Web Servers/Proxies
+Version: 2023-12-02-102cb56-1
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @HAS_BPF_TOOLCHAIN +ca-bundle +kmod-sched-core +kmod-sched-bpf +kmod-xdp-sockets-diag +kmod-veth +node +v2ray-geoip +v2ray-geosite +zoneinfo-asia
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: daed-next is a backend of dae
+Maintainer: 
+Source: daed-next-2023-12-02-102cb56.tar.gz
+Type: ipkg
+Description:   daed-next is a backend of dae, provides a method to bundle arbitrary
+  frontend, dae and geodata into one binary.
+https://github.com/daeuniverse/daed-revived-next
+
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/lua-ipops/Makefile
+
+Package: lua-ipops
+Submenu: Libs
+Version: 0.0.1-1
+Depends: +libc +lua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: X
+Repository: base
+Title: lua ipops lib
+Maintainer: Chen Minqiang <ptpt52@gmail.com>
+Source: lua-ipops-0.0.1.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description: lua ipops lib
+Chen Minqiang <ptpt52@gmail.com>
+@@
+
+

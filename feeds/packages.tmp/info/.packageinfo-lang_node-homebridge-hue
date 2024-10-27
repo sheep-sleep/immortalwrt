@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-homebridge-hue/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-hue
+Submenu: Node.js
+Version: 0.13.70-1
+Depends: +libc +node +node-homebridge
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Homebridge plugin for Hue
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-hue-0.13.70.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  This Homebridge plugin exposes to Apple's HomeKit ZigBee devices (lights, plugs, sensors, switches, ...) connected to a Hue bridge by Signify.
+https://www.npmjs.com/package/homebridge-hue
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

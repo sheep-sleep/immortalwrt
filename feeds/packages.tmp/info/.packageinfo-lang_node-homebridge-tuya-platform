@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-homebridge-tuya-platform/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-tuya-platform
+Submenu: Node.js
+Version: 1.5.0-1
+Depends: +libc +node +node-homebridge
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Official Homebridge plugin for Tuya Open API
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-tuya-platform-1.5.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Official Homebridge plugin for Tuya Open API, maintained by the Tuya Developer Team.
+https://www.npmjs.com/package/homebridge-tuya-platform
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

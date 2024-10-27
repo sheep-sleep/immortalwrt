@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-shanligong/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-shanligong
+Submenu: 3. Applications
+Version: 2.5.0
+Depends: +libc +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: shanligong web for luci
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: shanligong web for luci
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

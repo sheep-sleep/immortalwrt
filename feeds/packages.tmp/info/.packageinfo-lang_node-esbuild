@@ -1,0 +1,27 @@
+Source-Makefile: feeds/packages/lang/node-esbuild/Makefile
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-esbuild
+Submenu: Node.js
+Version: 0.19.9-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: An extremely fast JavaScript and CSS bundler and minifier
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: esbuild-0.19.9.tgz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Build-Only: 1
+Description:  An extremely fast JavaScript and CSS bundler and minifier.
+https://esbuild.github.io/
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,28 @@
+Source-Makefile: feeds/smpackage/upx/Makefile
+Build-Types: host
+
+Package: upx
+Submenu: Compression
+Version: 4.2.4-1
+Depends: +libc +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: The Ultimate Packer for eXecutables
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: upx-4.2.4-src.tar.xz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Description:   UPX is an advanced executable file compressor. UPX will typically
+  reduce the file size of programs and DLLs by around 50%-70%, thus
+  reducing disk space, network load times, download times and
+  other distribution and storage costs.
+https://upx.github.io
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

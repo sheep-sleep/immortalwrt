@@ -1,0 +1,31 @@
+Source-Makefile: feeds/smpackage/luci-app-dnscrypt-proxy2/Makefile
+
+Package: luci-app-dnscrypt-proxy2
+Submenu: 3. Applications
+Version: 2.1.3-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: DNSCrypt Proxy LuCI interface
+Maintainer: peter-tank
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for dnscrypt-proxy2.
+https://github.com/peter-tank/luci-app-dnscrypt-proxy2
+peter-tank
+@@
+Config:
+
+config PACKAGE_luci-app-dnscrypt-proxy2_INCLUDE_minisign
+	bool "Include minisign for customized offline resolvers list self-sign."
+	default n
+
+@@
+
+

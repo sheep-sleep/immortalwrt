@@ -1,0 +1,53 @@
+Source-Makefile: feeds/smpackage/netmaker/Makefile
+Build-Depends: golang/host
+
+Package: netmaker
+Submenu: VPN
+Version: 0.9.4-1
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Netmaker for OpenWRT
+Maintainer: sbilly <superli_1980@hotmail.com>
+Source: netmaker-0.9.4.tar.xz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Netmaker is a platform for creating and managing fast, secure, and 
+dynamic virtual overlay networks using WireGuard. This project offers
+OpenWRT packages for Netmaker.
+
+This package contains the binaries.
+https://github.com/gravitl/netmaker
+sbilly <superli_1980@hotmail.com>
+@@
+
+Package: netmaker-dev
+Submenu: VPN
+Version: 0.9.4-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: (source files)
+Maintainer: sbilly <superli_1980@hotmail.com>
+Source: netmaker-0.9.4.tar.xz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Netmaker is a platform for creating and managing fast, secure, and 
+dynamic virtual overlay networks using WireGuard. This project offers
+OpenWRT packages for Netmaker.
+
+This package provides the source files.
+sbilly <superli_1980@hotmail.com>
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/homebox/Makefile
+
+Package: homebox
+Version: 0.0.0-dev.2023102203-3
+Depends: +libc @(i386||x86_64||arm||aarch64||mipsel||mips)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A Toolbox for Home Local Networks
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   A Toolbox for Home Local Networks Speed Test
+https://github.com/XGHeaven/homebox
+
+@@
+
+

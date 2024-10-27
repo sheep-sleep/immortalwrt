@@ -1,0 +1,26 @@
+Source-Makefile: feeds/packages/lang/node-homebridge-camera-ui/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-camera-ui
+Submenu: Node.js
+Version: 5.0.27-1
+Depends: +libc +node +node-homebridge +node-ffmpeg-for-homebridge +node-camera.ui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: User Interface for RTSP capable cameras
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-camera-ui-5.0.27.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  *** "camara.ui" has not been maintained. Please use it at your own risk. ***
+ homebridge-camera-ui allows you to expose cameras from camera.ui to HomeKit via Homebridge. camera.ui does not need to be installed separately. It is installed right away with homebridge-camera-ui
+https://www.npmjs.com/package/homebridge-camera-ui
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

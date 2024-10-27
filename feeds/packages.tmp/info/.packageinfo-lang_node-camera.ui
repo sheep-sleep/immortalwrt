@@ -1,0 +1,26 @@
+Source-Makefile: feeds/packages/lang/node-camera.ui/Makefile
+Build-Depends: node/host
+
+Package: node-camera.ui
+Submenu: Node.js
+Version: 1.1.17-1
+Depends: +libc +node +node-mqtt +node-socket.io +node-pam-diff +node-ffmpeg-for-homebridge +node-socketio-jwt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: NVR like user interface for RTSP capable cameras
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: camera.ui-1.1.17.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  *** "camara.ui" has not been maintained. Please use it at your own risk. ***
+ NVR like user interface for RTSP capable cameras.
+https://www.npmjs.com/package/camera.ui
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

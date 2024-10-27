@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/upx-static/Makefile
+
+Package: upx-static
+Submenu: Compression
+Version: 3.96-20220422
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: UPX - The Ultimate Packer for eXecutables
+Maintainer: 
+Source: 
+Type: ipkg
+Description: UPX - The Ultimate Packer for eXecutables
+https://upx.github.io
+
+@@
+
+

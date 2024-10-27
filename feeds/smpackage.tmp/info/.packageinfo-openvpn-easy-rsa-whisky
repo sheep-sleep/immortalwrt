@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/openvpn-easy-rsa-whisky/Makefile
+
+Package: openvpn-easy-rsa-whisky
+Submenu: VPN
+Version: 3.0.9-1
+Depends: +libc +openssl-util
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: CLI utility to build and manage a PKI CA.
+Maintainer: 
+Source: openvpn-easy-rsa-3.0.9-150e96ec9b290396ccbe160bd23f6dd1b277250d.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description: CLI utility to build and manage a PKI CA.
+http://openvpn.net
+
+@@
+
+

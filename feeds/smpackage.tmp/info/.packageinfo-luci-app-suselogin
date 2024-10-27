@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/luci-app-suselogin/Makefile
+
+Package: luci-app-suselogin
+Submenu: 3. Applications
+Version: 2.1-5
+Depends: +libc +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: SUSE Login for LuCI
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	SUSE Login for LuCI.
+
+@@
+
+

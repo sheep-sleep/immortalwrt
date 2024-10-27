@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-vonage-server-sdk/Makefile
+Build-Depends: node/host
+
+Package: node-vonage-server-sdk
+Submenu: Node.js
+Version: 3.16.0-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Node.js Client for the Vonage API Platform
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: vonage-server-sdk-3.16.0.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:  This is the Node.JS Server SDK for Vonage APIs. To use it you will need a Vonage account.
+https://www.npmjs.org/package/@vonage/server-sdk
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

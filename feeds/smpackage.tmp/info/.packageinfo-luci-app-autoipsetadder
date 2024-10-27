@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/luci-app-autoipsetadder/Makefile
+
+Package: luci-app-autoipsetadder
+Submenu: 3. Applications
+Version: 1.0-7
+Depends: +libc +httping +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for autoipsetadder
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	LuCI support for autoipsetadder
+
+@@
+
+

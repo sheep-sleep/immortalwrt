@@ -1,0 +1,44 @@
+Source-Makefile: feeds/smpackage/luci-app-cloudflarespeedtest/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-cloudflarespeedtest
+Submenu: 3. Applications
+Version: 1.5.4
+Depends: +libc +cdnspeedtest +openssl-util +curl +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Cloudflares Speed Test
+Maintainer: OpenWrt LuCI community
+Source: 
+License: AGPL-3.0
+Type: ipkg
+Description: LuCI support for Cloudflares Speed Test
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-cloudflarespeedtest-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-cloudflarespeedtest
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cloudflarespeedtest - zh-cn translation
+Maintainer: mingxiaoyu <fengying0347@163.com>
+Source: 
+License: AGPL-3.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cloudflarespeedtest - 简体中文 (Chinese Simplified)
+mingxiaoyu <fengying0347@163.com>
+@@
+
+

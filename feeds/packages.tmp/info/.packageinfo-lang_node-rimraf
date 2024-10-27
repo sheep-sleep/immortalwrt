@@ -1,0 +1,27 @@
+Source-Makefile: feeds/packages/lang/node-rimraf/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-rimraf
+Submenu: Node.js
+Version: 6.0.1-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: A deep deletion module for node (like rm -rf)
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: rimraf-6.0.1.tgz
+License: ISC
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  The UNIX command rm -rf for node
+https://www.npmjs.org/package/rimraf
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

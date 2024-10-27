@@ -1,0 +1,20 @@
+Source-Makefile: feeds/smpackage/open-app-filter/Makefile
+
+Package: appfilter
+Version: 5.0.2-1
+Depends: +libc +libubox +libubus +libuci +libpthread +libjson-c +libblobmsg-json
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Derry Apps
+Category: Derry Apps
+Repository: base
+Title: App filter userspace module
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   open appfilter app
+
+@@
+
+

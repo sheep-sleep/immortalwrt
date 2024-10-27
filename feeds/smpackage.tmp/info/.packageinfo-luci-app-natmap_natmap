@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-natmap/natmap/Makefile
+
+Package: natmap
+Version: 20240813-1
+Depends: +libc +jq +curl +openssl-util
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: TCP/UDP port mapping tool for full cone NAT
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: natmap-20240813.tar.gz
+License: MIT
+LicenseFiles: License
+Type: ipkg
+Description: TCP/UDP port mapping tool for full cone NAT
+https://github.com/heiher/natmap
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+

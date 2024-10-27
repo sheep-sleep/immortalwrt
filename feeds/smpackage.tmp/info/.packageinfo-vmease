@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/vmease/Makefile
+
+Package: vmease
+Submenu: Web Servers/Proxies
+Version: 0.5.1--2
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: VmEase - webvirtcloud helper
+Maintainer: 
+Source: vmease-binary-0.5.1.tar.gz
+Type: ipkg
+Description:   VmEase is a helper tool for libvirtd
+https://doc.linkease.com/zh/guide/istoreos/software/webvirtcloud.html
+
+@@
+
+

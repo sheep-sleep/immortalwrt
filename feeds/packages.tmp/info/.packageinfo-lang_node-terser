@@ -1,0 +1,27 @@
+Source-Makefile: feeds/packages/lang/node-terser/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-terser
+Submenu: Node.js
+Version: 5.31.6-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: JavaScript parser, mangler/compressor
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: terser-5.31.6.tgz
+License: BSD-2-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  JavaScript parser, mangler/compressor and beautifier toolkit for ES6+
+https://www.npmjs.org/package/terser
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

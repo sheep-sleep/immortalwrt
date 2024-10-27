@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-azure-event-hubs/Makefile
+Build-Depends: node/host
+
+Package: node-azure-event-hubs
+Submenu: Node.js
+Version: 5.12.0-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Azure Event Hubs service
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: azure-event-hubs-5.12.0.tgz
+License: MIT
+LicenseFiles: License
+Type: ipkg
+Description:  Azure Event Hubs service
+https://www.npmjs.org/package/azure-event-hubs
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

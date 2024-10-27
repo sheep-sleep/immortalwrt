@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/net/amule/Makefile
+Build-Depends: libgd
+
+Package: amule
+Submenu: P2P
+Version: 2.3.3-5
+Depends: +libc +antileech +libpng +libpthread +libncurses +libreadline +libwxbase +libupnp +libbfd +libcryptopp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A multi-platform eMule-like ed2k client
+Maintainer: 
+Source: amule-2.3.3.tar.gz
+Type: ipkg
+Description: A multi-platform eMule-like ed2k client
+http://www.amule.org/
+
+@@
+
+

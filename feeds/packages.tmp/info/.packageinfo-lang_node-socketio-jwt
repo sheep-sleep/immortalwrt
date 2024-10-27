@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-socketio-jwt/Makefile
+Build-Depends: node/host
+
+Package: node-socketio-jwt
+Submenu: Node.js
+Version: 4.6.2-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: authenticate socket.io connections using JWTs
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: socketio-jwt-4.6.2.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Authenticate socket.io incoming connections with JWTs.
+https://www.npmjs.org/package/socketio-jwt
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

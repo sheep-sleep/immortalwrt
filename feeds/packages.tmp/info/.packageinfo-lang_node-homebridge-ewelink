@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/lang/node-homebridge-ewelink/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-ewelink
+Submenu: Node.js
+Version: 12.3.1-1
+Depends: +libc +node +node-homebridge
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Homebridge plugin to integrate eWeLink devices
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-ewelink-12.3.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Homebridge plugin to integrate eWeLink devices into HomeKit.
+https://www.npmjs.com/package/homebridge-ewelink
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,24 @@
+Source-Makefile: feeds/smpackage/luci-app-alpha-config/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-alpha-config
+Submenu: 3. Applications
+Version: 2.1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for Alpha theme configuration
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description:    Configuration Alpha theme in LuCI.
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

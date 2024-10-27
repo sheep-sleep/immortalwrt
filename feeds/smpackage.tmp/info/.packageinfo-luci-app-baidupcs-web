@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-baidupcs-web/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-baidupcs-web
+Submenu: 3. Applications
+Version: 1.0
+Depends: +libc +baidupcs-web +wget +openssl-util +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for BaiduPCS-Go
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI support for BaiduPCS-Go
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

@@ -1,0 +1,42 @@
+Source-Makefile: feeds/smpackage/luci-app-netspeedtest/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-netspeedtest
+Submenu: 3. Applications
+Version: 2.2.4
+Depends: +libc +python3 +iperf3-ssl +homebox +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for netspeedtest
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI Support for netspeedtest
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-netspeedtest-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-netspeedtest
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-netspeedtest - zh-cn translation
+Maintainer: <https://github.com/sirpdboy/netspeedtest>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-netspeedtest - 简体中文 (Chinese Simplified)
+<https://github.com/sirpdboy/netspeedtest>
+@@
+
+

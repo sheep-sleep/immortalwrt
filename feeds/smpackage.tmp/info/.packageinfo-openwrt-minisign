@@ -1,0 +1,39 @@
+Source-Makefile: feeds/smpackage/openwrt-minisign/Makefile
+Build-Depends: libsodium
+
+Package: minisign
+Version: 0.11-1
+Depends: +libc +libpthread +!minisign_WITH_SODIUM:libsodium
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: A dead simple tool to sign files and verify signatures.
+Maintainer: peter-tank
+Source: minisign-0.11-709fed6b739422f62dafce048669430fbc956770.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Minisign is a dead simple tool to sign files and verify signatures.
+https://github.com/jedisct1/minisign
+peter-tank
+@@
+Config:
+menu "minisign Compile Configuration"
+	config minisign_STATIC_LINK
+		bool "enable static link libraries."
+		default y
+
+		menu "Select libraries"
+			depends on minisign_STATIC_LINK
+			config minisign_WITH_SODIUM
+				bool "static link libsodium."
+				default y
+
+		endmenu
+endmenu
+@@
+
+

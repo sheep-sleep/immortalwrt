@@ -1,0 +1,24 @@
+Source-Makefile: feeds/packages/lang/lua-maxminddb/Makefile
+
+Package: lua-maxminddb
+Submenu: Lua
+Version: 0.2-2
+Depends: +libc +lua +libmaxminddb
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: libmaxminddb bindings for lua
+Maintainer: 
+Source: lua-maxminddb-0.2.tar.xz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: libmaxminddb bindings for lua
+https://github.com/fabled/lua-maxminddb
+
+@@
+
+

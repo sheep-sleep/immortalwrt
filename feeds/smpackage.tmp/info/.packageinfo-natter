@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/natter/Makefile
+
+Package: natter
+Version: 0.9-0
+Depends: +libc +python3-light +iptables-mod-fullconenat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Open Port under FullCone NAT (NAT 1)
+Maintainer: 
+Source: natter-42005887f95dcfdfd5ed995bf237003f2f80ccfd.tar.gz
+Type: ipkg
+Description: Open Port under FullCone NAT (NAT 1)
+https://github.com/MikeWang000000/Natter
+
+@@
+
+

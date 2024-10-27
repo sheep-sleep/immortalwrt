@@ -1,0 +1,32 @@
+Source-Makefile: feeds/packages/net/clash/Makefile
+Build-Depends: golang/host
+
+Package: clash
+Submenu: Web Servers/Proxies
+Version: 1.18.0-2
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A rule-based tunnel in Go
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: clash-1.18.0.tar.gz
+License: GPL-3.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Clash is a cross-platform rule-based proxy utility that runs on the
+  network and application layer, supporting various proxy and
+  anti-censorship protocols out-of-the-box.
+
+  It has been adopted widely by the Internet users in some countries
+  and regions where the Internet is heavily censored or blocked.
+  Either way, Clash can be used by anyone who wants to improve their
+  Internet experience.
+https://github.com/Dreamacro/clash
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

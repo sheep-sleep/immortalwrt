@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/UnblockNeteaseMusic/Makefile
+
+Package: UnblockNeteaseMusic
+Version: 0.27.8-patch.1-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: base
+Title: Revive Netease Cloud Music (NodeJS)
+Maintainer: 
+Source: UnblockNeteaseMusic-0.27.8-patch.1.tar.gz
+Type: ipkg
+Description: Revive Netease Cloud Music (NodeJS)
+https://github.com/nondanee/UnblockNeteaseMusic
+
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/luci-app-minieap/Makefile
+
+Package: luci-app-minieap
+Submenu: 3. Applications
+Version: 1.0.2-0
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: minieap 802.1X Client for LuCI
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	This package contains LuCI configuration pages for 8021xclient.
+
+@@
+
+

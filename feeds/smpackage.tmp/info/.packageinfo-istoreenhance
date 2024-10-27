@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/istoreenhance/Makefile
+
+Package: istoreenhance
+Submenu: Web Servers/Proxies
+Version: 0.1.7--1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: iStoreEnhance - Fix some net issues for istore
+Maintainer: 
+Source: iStoreEnhance-binary-0.1.7.tar.gz
+Type: ipkg
+Description:   Fix some net issues for istore
+https://www.istoreos.com/
+
+@@
+
+

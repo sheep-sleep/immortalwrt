@@ -1,0 +1,29 @@
+Source-Makefile: feeds/smpackage/homeredirect/Makefile
+
+Package: HomeRedirect
+Version: 1.4-1
+Depends: +libc +bash +coreutils-nohup +socat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Port forwarding utility for HomeLede.
+Maintainer: xiaoqingfeng <xiaoqingfengatgm@gmail.com>
+Source: 
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Port forwarding utility for HomeLede. Support TCP/UDP ipv4 & ipv6.
+https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng
+xiaoqingfeng <xiaoqingfengatgm@gmail.com>
+@@
+Config:
+help
+	HomeRedirect
+	Version: 1.4-1
+	Port forwarding utility for HomeLede. Support TCP/UDP ipv4 & ipv6.
+@@
+
+

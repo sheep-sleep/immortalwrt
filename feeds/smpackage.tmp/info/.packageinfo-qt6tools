@@ -1,0 +1,25 @@
+Source-Makefile: feeds/smpackage/qt6tools/Makefile
+Build-Depends/host: qt6base/host
+Build-Types: host
+
+Package: qt6tools
+Submenu: Qt6
+Version: 6.8.0-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Qt6 Tools
+Maintainer: 
+Source: qttools-6.8.0.tar.gz
+Type: ipkg
+Build-Only: 1
+Description: Qt6 Tools
+http://qt-project.org
+
+@@
+
+

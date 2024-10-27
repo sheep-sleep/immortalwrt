@@ -1,0 +1,64 @@
+Source-Makefile: feeds/smpackage/luci-app-wrtbwmon/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-wrtbwmon
+Submenu: 3. Applications
+Version: 2.0.13
+Depends: +libc +wrtbwmon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: A Luci module that uses wrtbwmon to track bandwidth usage
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: A Luci module that uses wrtbwmon to track bandwidth usage
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-wrtbwmon-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-wrtbwmon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-wrtbwmon - zh-cn translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-wrtbwmon - 简体中文 (Chinese Simplified)
+
+@@
+
+Package: luci-i18n-wrtbwmon-zh-tw
+Default: LUCI_LANG_zh_Hant||(ALL&&m)
+Version: x
+Depends: +libc luci-app-wrtbwmon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-wrtbwmon - zh-tw translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-wrtbwmon - 繁體中文 (Chinese Traditional)
+
+@@
+
+

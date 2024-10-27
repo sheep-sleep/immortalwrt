@@ -1,0 +1,22 @@
+Source-Makefile: feeds/smpackage/airconnect/Makefile
+
+Package: airconnect
+Version: 1.8.3-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: base
+Title: AirConnect
+Maintainer: sbwml <admin@cooluc.com>
+Source: AirConnect-1.8.3.zip
+License: MIT
+Type: ipkg
+Description:   Use AirPlay to stream to UPnP/Sonos & Chromecast devices
+https://github.com/philippe44/AirConnect
+sbwml <admin@cooluc.com>
+@@
+
+

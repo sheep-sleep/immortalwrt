@@ -1,0 +1,42 @@
+Source-Makefile: feeds/smpackage/luci-app-netkeeper-interception/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-netkeeper-interception
+Submenu: 3. Applications
+Version: 0.1
+Depends: +libc +luci-compat +netkeeper-interception +luci-proto-netkeeper +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for Netkeeper-Interception
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI Support for Netkeeper-Interception
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-netkeeper-interception-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-netkeeper-interception
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-netkeeper-interception - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-netkeeper-interception - 简体中文 (Chinese Simplified)
+
+@@
+
+

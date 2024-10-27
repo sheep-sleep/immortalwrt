@@ -1,0 +1,20 @@
+Source-Makefile: feeds/smpackage/netkeeper/Makefile
+
+Package: netkeeper
+Version: 3-2
+Depends: +libc +ppp-mod-pppoe
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Netkeeper
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Netkeeper
+
+@@
+
+

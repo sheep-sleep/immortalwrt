@@ -1,0 +1,20 @@
+Source-Makefile: feeds/smpackage/netkeeper-interception/Makefile
+
+Package: netkeeper-interception
+Version: 0.2-1
+Depends: +libc ppp +rp-pppoe-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Netkeeper Account Dump Plugin
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Netkeeper Account Dump Plugin
+
+@@
+
+

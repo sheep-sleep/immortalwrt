@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-homebridge/Makefile
+
+Package: luci-app-homebridge
+Submenu: 3. Applications
+Version: 0.1.0-1
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for homebridge
+Maintainer: lanxin Shang <shanglanxin@gmail.com>
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for homebridge.
+lanxin Shang <shanglanxin@gmail.com>
+@@
+
+

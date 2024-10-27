@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-mac/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-mac
+Submenu: 3. Applications
+Version: 4.2.1
+Depends: +libc +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: mac for luci
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: mac for luci
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

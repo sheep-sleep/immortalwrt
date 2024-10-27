@@ -1,0 +1,27 @@
+Source-Makefile: feeds/packages/lang/node-gyp-build/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-gyp-build
+Submenu: Node.js
+Version: 4.8.1-1
+Depends: +libc +node +node-gyp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Build tool and bindings loader for node-gyp that supports prebuilds
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-gyp-build-4.8.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Build tool and bindings loader for node-gyp that supports prebuilds
+https://www.npmjs.com/package/node-gyp-build
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

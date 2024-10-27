@@ -1,0 +1,23 @@
+Source-Makefile: feeds/smpackage/luci-app-dogcom/Makefile
+
+Package: luci-app-dogcom
+Submenu: 3. Applications
+Version: 1.0.2-1
+Depends: +libc +dogcom
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI app for openwrt-dogcom
+Maintainer: fuyumi
+Source: luci-app-dogcom.tar.gz
+License: AGPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	This package contains LuCI configuration pages for openwrt-dogcom.
+fuyumi
+@@
+
+

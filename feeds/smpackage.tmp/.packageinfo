@@ -2708,7 +2708,7 @@ Maintainer: <https://github.com/rufengsuixing/luci-app-adguardhome>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-adguardhome - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-adguardhome - 简体中文 (Chinese Simplified)
 <https://github.com/rufengsuixing/luci-app-adguardhome>
 @@
 
@@ -2771,7 +2771,7 @@ Maintainer: sbwml <admin@cooluc.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-airconnect - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-airconnect - 简体中文 (Chinese Simplified)
 sbwml <admin@cooluc.com>
 @@
 
@@ -2836,7 +2836,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-alist - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-alist - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -2880,7 +2880,7 @@ Source:
 License: MIT
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-aliyundrive-fuse - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-aliyundrive-fuse - 简体中文 (Chinese Simplified)
 messense <messense@icloud.com>
 @@
 
@@ -2924,7 +2924,7 @@ Source:
 License: MIT
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-aliyundrive-webdav - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-aliyundrive-webdav - 简体中文 (Chinese Simplified)
 messense <messense@icloud.com>
 @@
 
@@ -2992,7 +2992,7 @@ Source:
 License: GPL-2.0 License
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-amlogic - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-amlogic - 简体中文 (Chinese Simplified)
 ophub <https://github.com/ophub/luci-app-amlogic>
 @@
 
@@ -3034,7 +3034,7 @@ Maintainer: jjm2473 <jjm2473@gmail.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ap-modem - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ap-modem - 简体中文 (Chinese Simplified)
 jjm2473 <jjm2473@gmail.com>
 @@
 
@@ -3095,7 +3095,7 @@ Maintainer: jerrykuku <jerrykuku@qq.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-argon-config - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-argon-config - 简体中文 (Chinese Simplified)
 jerrykuku <jerrykuku@qq.com>
 @@
 
@@ -3175,7 +3175,7 @@ Maintainer: jerrykuku <jerrykuku@qq.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-argone-config - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-argone-config - 简体中文 (Chinese Simplified)
 jerrykuku <jerrykuku@qq.com>
 @@
 
@@ -3284,7 +3284,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-autotimeset - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-autotimeset - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3326,7 +3326,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-autoupdate - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-autoupdate - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3416,7 +3416,7 @@ License: GLPv3
 LicenseFiles: LICENSE
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-beardropper - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-beardropper - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3479,7 +3479,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-bmtedge - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-bmtedge - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3576,7 +3576,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-bypass - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-bypass - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3618,7 +3618,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-chatgpt-web - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-chatgpt-web - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3660,7 +3660,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-chinesesubfinder - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-chinesesubfinder - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3769,7 +3769,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-clouddrive2 - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-clouddrive2 - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3813,7 +3813,7 @@ Source:
 License: AGPL-3.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-cloudflarespeedtest - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-cloudflarespeedtest - 简体中文 (Chinese Simplified)
 mingxiaoyu <fengying0347@163.com>
 @@
 
@@ -3855,7 +3855,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-codeserver - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-codeserver - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3897,7 +3897,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-control-timewol - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-control-timewol - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3939,7 +3939,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-control-webrestriction - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-control-webrestriction - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -3981,7 +3981,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-control-weburl - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-control-weburl - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4046,7 +4046,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-daed - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-daed - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4088,7 +4088,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-daed-next - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-daed-next - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4130,7 +4130,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ddns-go - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ddns-go - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4172,7 +4172,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ddnsto - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ddnsto - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4247,7 +4247,7 @@ Source:
 License: GPLv2
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-dnsfilter - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-dnsfilter - 简体中文 (Chinese Simplified)
 small_5 kiddin9
 @@
 
@@ -4338,7 +4338,7 @@ Source:
 License: AGPL-3.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-dockerman - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-dockerman - 简体中文 (Chinese Simplified)
 lisaac <lisaac.cn@gmail.com> Florian Eckert <fe@dev.tdt.de>
 @@
 
@@ -4403,7 +4403,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-drawio - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-drawio - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4445,7 +4445,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-easymesh - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-easymesh - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4487,7 +4487,7 @@ Maintainer: sundaqiang
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-easyupdate - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-easyupdate - 简体中文 (Chinese Simplified)
 sundaqiang
 @@
 
@@ -4529,7 +4529,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-emby - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-emby - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4571,7 +4571,7 @@ Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com> GaryPang <https://github.com
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-eqos - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-eqos - 简体中文 (Chinese Simplified)
 Jianhui Zhao <jianhuizhao329@gmail.com> GaryPang <https://github.com/garypang13/luci-app-eqos>
 @@
 
@@ -4615,7 +4615,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-eqosplus - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-eqosplus - 简体中文 (Chinese Simplified)
 sirpdboy <herboy2008@gmail.com>
 @@
 
@@ -4657,7 +4657,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-excalidraw - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-excalidraw - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4722,7 +4722,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-fchomo - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-fchomo - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -4764,7 +4764,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-feishuvpn - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-feishuvpn - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -5011,7 +5011,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-filebrowser - 日本�(Japanese)
+Description:     Translation for luci-app-filebrowser - 日本語 (Japanese)
 Sergey Ponomarev <stokito@gmail.com>
 @@
 
@@ -5271,7 +5271,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-filebrowser - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-filebrowser - 简体中文 (Chinese Simplified)
 Sergey Ponomarev <stokito@gmail.com>
 @@
 
@@ -5333,7 +5333,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-fullconenat - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-fullconenat - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -5398,7 +5398,7 @@ Maintainer: jerrykuku <jerrykuku@qq.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-go-aliyundrive-webdav - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-go-aliyundrive-webdav - 简体中文 (Chinese Simplified)
 jerrykuku <jerrykuku@qq.com>
 @@
 
@@ -5484,7 +5484,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-gogs - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-gogs - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -5526,7 +5526,7 @@ Maintainer: ImmortalWrt
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-gost - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-gost - 简体中文 (Chinese Simplified)
 ImmortalWrt
 @@
 
@@ -5568,7 +5568,7 @@ Maintainer: CN_SZTL <cnsztl@immortalwrt.org>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-gowebdav - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-gowebdav - 简体中文 (Chinese Simplified)
 CN_SZTL <cnsztl@immortalwrt.org>
 @@
 
@@ -5610,7 +5610,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-guest-wifi - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-guest-wifi - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -5652,7 +5652,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-heimdall - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-heimdall - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -5694,7 +5694,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-homeassistant - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-homeassistant - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -5759,7 +5759,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-homeproxy - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-homeproxy - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -5801,7 +5801,7 @@ Maintainer: Richard Yu <xiaoqingfengatgm@gmail.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-homeredirect - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-homeredirect - 简体中文 (Chinese Simplified)
 Richard Yu <xiaoqingfengatgm@gmail.com>
 @@
 
@@ -5843,7 +5843,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-htreader - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-htreader - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6015,7 +6015,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-iperf3-server - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-iperf3-server - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6057,7 +6057,7 @@ Maintainer: Lienol <lawlienol@gmail.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ipsec-server - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ipsec-server - 简体中文 (Chinese Simplified)
 Lienol <lawlienol@gmail.com>
 @@
 
@@ -6101,7 +6101,7 @@ Source:
 License: GPL-3.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-iptvhelper - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-iptvhelper - 简体中文 (Chinese Simplified)
 Shun Li <riverscn@gmail.com>
 @@
 
@@ -6143,7 +6143,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-istoreenhance - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-istoreenhance - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6185,7 +6185,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-istorego - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-istorego - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6227,7 +6227,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-istorepanel - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-istorepanel - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6292,7 +6292,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ittools - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ittools - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6334,7 +6334,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-jackett - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-jackett - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6376,7 +6376,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-jellyfin - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-jellyfin - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6418,7 +6418,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-kodexplorer - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-kodexplorer - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6483,7 +6483,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-lanraragi - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-lanraragi - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6525,7 +6525,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-linkease - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-linkease - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6567,7 +6567,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-lucky - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-lucky - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6737,7 +6737,7 @@ Source:
 License: GPLv3
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-mail - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-mail - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6779,7 +6779,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-memos - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-memos - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6842,7 +6842,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-mfun - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-mfun - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6884,7 +6884,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-mihomo - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-mihomo - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -6947,7 +6947,7 @@ Maintainer: sbwml <admin@cooluc.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-mosdns - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-mosdns - 简体中文 (Chinese Simplified)
 sbwml <admin@cooluc.com>
 @@
 
@@ -6989,7 +6989,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-msd_lite - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-msd_lite - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7031,7 +7031,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-mtphotos - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-mtphotos - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7096,7 +7096,7 @@ Maintainer: xiaobao <xiaobao@linkease.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-mymind - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-mymind - 简体中文 (Chinese Simplified)
 xiaobao <xiaobao@linkease.com>
 @@
 
@@ -7138,7 +7138,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-nastools - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-nastools - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7182,7 +7182,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-natmap - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-natmap - 简体中文 (Chinese Simplified)
 Richard Yu <yurichard3839@gmail.com>
 @@
 
@@ -7267,7 +7267,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-natter - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-natter - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7309,7 +7309,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-natter2 - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-natter2 - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7351,7 +7351,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-navidrome - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-navidrome - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7414,7 +7414,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-netdata - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-netdata - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7456,7 +7456,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-netkeeper-interception - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-netkeeper-interception - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7498,7 +7498,7 @@ Maintainer: <https://github.com/sirpdboy/netspeedtest>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-netspeedtest - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-netspeedtest - 简体中文 (Chinese Simplified)
 <https://github.com/sirpdboy/netspeedtest>
 @@
 
@@ -7540,7 +7540,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-nextcloud - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-nextcloud - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7582,7 +7582,7 @@ Maintainer: sundaqiang
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-nginx-manager - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-nginx-manager - 简体中文 (Chinese Simplified)
 sundaqiang
 @@
 
@@ -7646,7 +7646,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-npc - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-npc - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7688,7 +7688,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-oaf - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-oaf - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7732,7 +7732,7 @@ Source:
 License: GPLv3
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-oled - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-oled - 简体中文 (Chinese Simplified)
 natelol <natelol@github.com>
 @@
 
@@ -7794,7 +7794,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-onliner - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-onliner - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7876,7 +7876,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-openvpn-client - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-openvpn-client - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -7939,7 +7939,7 @@ Maintainer: jjm2473 <jjm2473@gmail.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ota - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ota - 简体中文 (Chinese Simplified)
 jjm2473 <jjm2473@gmail.com>
 @@
 
@@ -7981,7 +7981,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-owntone - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-owntone - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8045,7 +8045,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-packet-capture - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-packet-capture - 简体中文 (Chinese Simplified)
 Wojciech Jowsa <wojciech.jowsa@gmail.com>
 @@
 
@@ -8089,7 +8089,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-partexp - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-partexp - 简体中文 (Chinese Simplified)
 Sirpdboy <herboy2008@gmail.com>
 @@
 
@@ -8252,7 +8252,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-passwall - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-passwall - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8403,7 +8403,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-passwall2 - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-passwall2 - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8445,7 +8445,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-penpot - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-penpot - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8487,7 +8487,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-photoprism - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-photoprism - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8529,7 +8529,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-plex - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-plex - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8571,7 +8571,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-poweroff - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-poweroff - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8613,7 +8613,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-poweroffdevice - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-poweroffdevice - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8655,7 +8655,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-pppoe-relay - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-pppoe-relay - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8697,7 +8697,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-pppoe-server - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-pppoe-server - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8739,7 +8739,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-pptp-server - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-pptp-server - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8804,7 +8804,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-qbittorrent - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-qbittorrent - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8846,7 +8846,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-quickstart - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-quickstart - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8888,7 +8888,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ramfree - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ramfree - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8930,7 +8930,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-routerdog - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-routerdog - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -8972,7 +8972,7 @@ Maintainer: jjm2473 <jjm2473@gmail.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-rtbwmon - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-rtbwmon - 简体中文 (Chinese Simplified)
 jjm2473 <jjm2473@gmail.com>
 @@
 
@@ -9014,7 +9014,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-runmynas - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-runmynas - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9081,7 +9081,7 @@ Source:
 License: AGPL-3.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-shortcutmenu - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-shortcutmenu - 简体中文 (Chinese Simplified)
 <https://github.com/doushang/luci-app-shortcutmenu>
 @@
 
@@ -9123,7 +9123,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-shutdown - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-shutdown - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9167,7 +9167,7 @@ Source:
 License: GPL-3.0-or-later
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-smartdns - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-smartdns - 简体中文 (Chinese Simplified)
 Nick Peng <pymumu@gmail.com>
 @@
 
@@ -9247,7 +9247,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-sms-tool - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-sms-tool - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9351,7 +9351,7 @@ Source:
 License: GPLv3
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-snmpd - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-snmpd - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9393,7 +9393,7 @@ Maintainer: Lienol <lawlienol@gmail.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-socat - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-socat - 简体中文 (Chinese Simplified)
 Lienol <lawlienol@gmail.com>
 @@
 
@@ -9435,7 +9435,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-softethervpn - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-softethervpn - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9477,7 +9477,7 @@ Maintainer: <https://github.com/ZeaKyX/luci-app-speedtest-web>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-speedtest-web - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-speedtest-web - 简体中文 (Chinese Simplified)
 <https://github.com/ZeaKyX/luci-app-speedtest-web>
 @@
 
@@ -9519,7 +9519,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ssr-mudb-server - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ssr-mudb-server - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9529,7 +9529,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-ssr-plus
 Submenu: 3. Applications
-Version: 188
+Version: 189
 Depends: +libc +coreutils +coreutils-base64 +dns2socks +dns2tcp +dnsmasq-full +@PACKAGE_dnsmasq_full_ipset +ipset +kmod-ipt-nat +ip-full +iptables +iptables-mod-tproxy +lua +lua-neturl +libuci-lua +microsocks +tcping +resolveip +shadowsocksr-libev-ssr-check +uclient-fetch +PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-mbedtls:libustream-mbedtls +PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-openssl:libustream-openssl +PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-wolfssl:libustream-wolfssl +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:v2ray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:curl +PACKAGE_luci-app-ssr-plus_INCLUDE_Xray:xray-core +PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG:chinadns-ng +PACKAGE_luci-app-ssr-plus_INCLUDE_MosDNS:mosdns +PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-ssr-plus_INCLUDE_Tuic_Client:tuic-client +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadow_TLS:shadow-tls +PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks:ipt2socks +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2:redsocks2 +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs:simple-obfs +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan:trojan +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -9696,7 +9696,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ssr-plus - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ssr-plus - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9761,7 +9761,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-sunpanel - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-sunpanel - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9803,7 +9803,7 @@ Maintainer: sundaqiang
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-supervisord - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-supervisord - 简体中文 (Chinese Simplified)
 sundaqiang
 @@
 
@@ -9866,7 +9866,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-syncthing - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-syncthing - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9908,7 +9908,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-systools - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-systools - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -9975,7 +9975,7 @@ Maintainer: <https://github.com/KFERMercer/luci-app-tcpdump>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-tcpdump - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-tcpdump - 简体中文 (Chinese Simplified)
 <https://github.com/KFERMercer/luci-app-tcpdump>
 @@
 
@@ -10081,7 +10081,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-timecontrol - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-timecontrol - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -10123,7 +10123,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-tinyfilemanager - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-tinyfilemanager - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -10247,7 +10247,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - বাংল�(Bengali)
+Description:     Translation for luci-app-transmission - বাংলা (Bengali)
 Richard Yu <yurichard3839@gmail.com>
 @@
 
@@ -10507,7 +10507,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - 日本�(Japanese)
+Description:     Translation for luci-app-transmission - 日本語 (Japanese)
 Richard Yu <yurichard3839@gmail.com>
 @@
 
@@ -10527,7 +10527,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - 한국�(Korean)
+Description:     Translation for luci-app-transmission - 한국어 (Korean)
 Richard Yu <yurichard3839@gmail.com>
 @@
 
@@ -10847,7 +10847,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-transmission - 简体中文 (Chinese Simplified)
 Richard Yu <yurichard3839@gmail.com>
 @@
 
@@ -10932,7 +10932,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-typecho - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-typecho - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -10974,7 +10974,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ubuntu - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-ubuntu - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11051,7 +11051,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-unblockmusic - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-unblockmusic - 简体中文 (Chinese Simplified)
 lean <coolsnowwolf@gmail.com>
 @@
 
@@ -11116,7 +11116,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-unifi - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-unifi - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11158,7 +11158,7 @@ Maintainer: jjm2473 <jjm2473@gmail.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-unishare - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-unishare - 简体中文 (Chinese Simplified)
 jjm2473 <jjm2473@gmail.com>
 @@
 
@@ -11200,7 +11200,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-usb-printer - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-usb-printer - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11265,7 +11265,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-v2raya - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-v2raya - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11307,7 +11307,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-vaultwarden - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-vaultwarden - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11349,7 +11349,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-verysync - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-verysync - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11391,7 +11391,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-vlmcsd - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-vlmcsd - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11452,7 +11452,7 @@ Maintainer: jjm2473 <jjm2473@gmail.com>
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-wan-mac - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-wan-mac - 简体中文 (Chinese Simplified)
 jjm2473 <jjm2473@gmail.com>
 @@
 
@@ -11500,7 +11500,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-webd - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-webd - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11565,7 +11565,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-webvirtcloud - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-webvirtcloud - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11675,7 +11675,7 @@ Source:
 License: GPLv3
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-wizard - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-wizard - 简体中文 (Chinese Simplified)
 Chen Minqiang <ptpt52@gmail.com>
 @@
 
@@ -11717,7 +11717,7 @@ Maintainer: sundaqiang
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-wolplus - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-wolplus - 简体中文 (Chinese Simplified)
 sundaqiang
 @@
 
@@ -11761,7 +11761,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-wrtbwmon - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-wrtbwmon - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11823,7 +11823,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-wxedge - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-wxedge - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -11964,7 +11964,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-xteve - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-xteve - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -12029,7 +12029,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-xunyou - 简体中�(Chinese Simplified)
+Description:     Translation for luci-app-xunyou - 简体中文 (Chinese Simplified)
 
 @@
 
@@ -12190,7 +12190,7 @@ License: GPLv3
 LicenseFiles: LICENSE
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-proto-minieap - 简体中�(Chinese Simplified)
+Description:     Translation for luci-proto-minieap - 简体中文 (Chinese Simplified)
 Richard Yu <yurichard3839@gmail.com>
 @@
 
@@ -12232,7 +12232,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-proto-netkeeper - 简体中�(Chinese Simplified)
+Description:     Translation for luci-proto-netkeeper - 简体中文 (Chinese Simplified)
 
 @@
 

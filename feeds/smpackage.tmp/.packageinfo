@@ -6852,7 +6852,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-mihomo
 Submenu: 3. Applications
-Version: 1.9.2
+Version: 1.9.3
 Depends: +libc +luci-base +mihomo
 Conflicts: 
 Menu-Depends: 
@@ -12609,7 +12609,7 @@ Source-Makefile: feeds/smpackage/mihomo/Makefile
 Build-Depends: golang/host
 
 Package: mihomo
-Version: 2024-10-20-3e966e82c793ca99e3badc84bf3f2907b100edae-3
+Version: 2024-10-20-3e966e82c793ca99e3badc84bf3f2907b100edae-4
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +curl +yq firewall4 +ip-full +kmod-inet-diag +kmod-nft-tproxy +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -16018,7 +16018,7 @@ Source-Makefile: feeds/smpackage/v2ray-geodata/Makefile
 
 Package: v2ray-geoip
 Submenu: IP Addresses and Names
-Version: 202410310053-1
+Version: 202411051341-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16039,7 +16039,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite
 Submenu: IP Addresses and Names
-Version: 20241013063848-1
+Version: 20241104071109-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16060,7 +16060,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite-ir
 Submenu: IP Addresses and Names
-Version: 202410280036-1
+Version: 202411040035-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16362,7 +16362,7 @@ Source-Makefile: feeds/smpackage/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 24.10.31-1
+Version: 24.11.5-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -16372,7 +16372,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-core-24.10.31.tar.gz
+Source: xray-core-24.11.5.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -16412,7 +16412,7 @@ Source-Makefile: feeds/smpackage/xunyou/Makefile
 
 Package: xunyou
 Submenu: Web Servers/Proxies
-Version: 2.0.5.1-1
+Version: 2.0.6.3-1
 Depends: +libc +coreutils-nohup
 Conflicts: 
 Menu-Depends: 
@@ -16422,7 +16422,7 @@ Category: Network
 Repository: base
 Title: xunyou
 Maintainer: 
-Source: xunyou_v2.0.5.1.tar.gz
+Source: xunyou_v2.0.6.3.tar.gz
 Type: ipkg
 Description: 	xunyou
 

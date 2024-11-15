@@ -141,7 +141,7 @@ Source-Makefile: feeds/smpackage/adguardhome/Makefile
 Build-Depends: golang/host
 
 Package: adguardhome
-Version: 0.107.53-1
+Version: 0.107.54-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -151,7 +151,7 @@ Category: Network
 Repository: base
 Title: Network-wide ads and trackers blocking DNS server
 Maintainer: Dobroslaw Kijowski <dobo90@gmail.com>
-Source: adguardhome-0.107.53.tar.gz
+Source: adguardhome-0.107.54.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -311,7 +311,7 @@ Source-Makefile: feeds/smpackage/aria2/Makefile
 Package: aria2
 Submenu: File Transfer
 Version: 1.37.0-9
-Depends: +libc +zlib +libstdcpp +ARIA2_OPENSSL:libopenssl +ARIA2_GNUTLS:libgnutls +ARIA2_NETTLE:libnettle +ARIA2_LIBGCRYPT:libgcrypt +ARIA2_GMP:libgmp +ARIA2_LIBXML2:libxml2 +ARIA2_EXPAT:libexpat +ARIA2_SFTP:libssh2 +ARIA2_ASYNC_DNS:libcares +ARIA2_COOKIE:libsqlite3
+Depends: +libc +zlib +libstdcpp +ARIA2_OPENSSL:libopenssl +ARIA2_OPENSSL:libopenssl-legacy +ARIA2_GNUTLS:libgnutls +ARIA2_NETTLE:libnettle +ARIA2_LIBGCRYPT:libgcrypt +ARIA2_GMP:libgmp +ARIA2_LIBXML2:libxml2 +ARIA2_EXPAT:libexpat +ARIA2_SFTP:libssh2 +ARIA2_ASYNC_DNS:libcares +ARIA2_COOKIE:libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1068,7 +1068,7 @@ Build-Depends: golang/host
 
 Package: ddns-go
 Submenu: Web Servers/Proxies
-Version: 6.7.5-1
+Version: 6.7.6-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -1079,7 +1079,7 @@ Repository: base
 Title: A Linux web GUI client of ddns-go
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Require-User: ddns-go:ddns-go
-Source: ddns-go-6.7.5.tar.gz
+Source: ddns-go-6.7.6.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -1713,7 +1713,7 @@ Build-Depends: golang/host
 
 Package: dnsproxy
 Submenu: IP Addresses and Names
-Version: 0.73.2-3
+Version: 0.73.3-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -1724,7 +1724,7 @@ Repository: base
 Title: Simple DNS proxy with DoH, DoT, DoQ and DNSCrypt support
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Require-User: dnsproxy=411:dnsproxy=411
-Source: dnsproxy-0.73.2.tar.gz
+Source: dnsproxy-0.73.3.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2214,7 +2214,7 @@ Source-Makefile: feeds/smpackage/hysteria/Makefile
 Build-Depends: golang/host
 
 Package: hysteria
-Version: 2.5.2-1
+Version: 2.6.0-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -2224,7 +2224,7 @@ Category: Network
 Repository: base
 Title: A feature-packed network utility optimized for networks of poor quality
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: hysteria-2.5.2.tar.gz
+Source: hysteria-2.6.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2384,7 +2384,7 @@ https://github.com/google/double-conversion
 Source-Makefile: feeds/smpackage/libnftnl/Makefile
 
 Package: libnftnl
-Version: 1.2.6-1
+Version: 1.2.8-1
 Depends: +libc +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -2394,7 +2394,7 @@ Category: Libraries
 Repository: base
 Title: Low-level netlink library for the nf_tables subsystem
 Maintainer: Steven Barth <steven@midlink.org>
-Source: libnftnl-1.2.6.tar.xz
+Source: libnftnl-1.2.8.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 CPE-ID: cpe:/a:netfilter:libnftnl
@@ -2549,7 +2549,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-3ginfo-lite
 Submenu: 3. Applications
-Version: 1.0.58-20231021
+Version: 1.0.58
 Depends: +libc +sms-tool +comgt +kmod-usb-serial-option
 Conflicts: 
 Menu-Depends: 
@@ -2804,7 +2804,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-alist
 Submenu: 3. Applications
-Version: 1.1.1
+Version: 1.1.2
 Depends: +libc +alist
 Conflicts: 
 Menu-Depends: 
@@ -3036,6 +3036,48 @@ Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ap-modem - 简体中文 (Chinese Simplified)
 jjm2473 <jjm2473@gmail.com>
+@@
+
+
+Source-Makefile: feeds/smpackage/luci-app-arcadia/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-arcadia
+Submenu: 3. Applications
+Version: 0.0.1-1
+Depends: +libc +lsblk +docker +dockerd +luci-lib-taskd +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for arcadia
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI support for arcadia
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-arcadia-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-arcadia
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-arcadia - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-arcadia - 简体中文 (Chinese Simplified)
+
 @@
 
 
@@ -3447,7 +3489,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-bmtedge
 Submenu: 3. Applications
-Version: 1.0.1-20241010
+Version: 1.0.2-20241111
 Depends: +libc +lsblk +docker +dockerd +luci-lib-taskd +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -6106,6 +6148,48 @@ Shun Li <riverscn@gmail.com>
 @@
 
 
+Source-Makefile: feeds/smpackage/luci-app-istoredup/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-istoredup
+Submenu: 3. Applications
+Version: 1.1.3-20241110
+Depends: +libc +lsblk +docker +dockerd +luci-lib-taskd +vmease +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for istoredup
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI support for istoredup
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-istoredup-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-istoredup
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-istoredup - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-istoredup - 简体中文 (Chinese Simplified)
+
+@@
+
+
 Source-Makefile: feeds/smpackage/luci-app-istoreenhance/Makefile
 Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
 
@@ -6852,7 +6936,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-mihomo
 Submenu: 3. Applications
-Version: 1.9.3
+Version: 1.11.0
 Depends: +libc +luci-base +mihomo
 Conflicts: 
 Menu-Depends: 
@@ -7360,7 +7444,7 @@ Source-Makefile: feeds/smpackage/luci-app-nekobox/Makefile
 
 Package: luci-app-nekobox
 Submenu: 3. Applications
-Version: 1.5.0-cn
+Version: 1.5.1-cn
 Depends: +libc +kmod-tun +bash +curl +jq +php8 +php8-cgi +php8-mod-curl +php8-mod-zip
 Conflicts: 
 Menu-Depends: 
@@ -7803,8 +7887,8 @@ Source-Makefile: feeds/smpackage/luci-app-openclash/Makefile
 
 Package: luci-app-openclash
 Submenu: 3. Applications
-Version: 0.46.033-beta
-Depends: +libc +dnsmasq-full +coreutils +coreutils-nohup +bash +curl +ca-bundle +ipset +ip-full +libcap +libcap-bin +libcap-bin +ruby +ruby-yaml +kmod-tun +unzip
+Version: 0.46.050-beta
+Depends: +libc +dnsmasq-full +coreutils +coreutils-nohup +bash +curl +ca-bundle +ip-full +libcap +libcap-bin +libcap-bin +ruby +ruby-yaml +kmod-tun +unzip
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -7835,6 +7919,15 @@ Config:
 	default y if ! PACKAGE_firewall4
 
 	config PACKAGE_iptables-mod-extra
+	default y if ! PACKAGE_firewall4
+
+	config PACKAGE_dnsmasq_full_ipset
+	default y if ! PACKAGE_firewall4
+
+	config PACKAGE_dnsmasq_full_nftset
+	default y if PACKAGE_firewall4
+
+	config PACKAGE_ipset
 	default y if ! PACKAGE_firewall4
 @@
 
@@ -8262,7 +8355,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-passwall2
 Submenu: 3. Applications
-Version: 1.31-1
+Version: 24.11.13
 Depends: +libc +coreutils +coreutils-base64 +coreutils-nohup +curl +ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc +resolveip +tcping +xray-core +v2ray-geoip +v2ray-geosite +unzip +PACKAGE_luci-app-passwall2_INCLUDE_IPv6_Nat:ip6tables-mod-nat +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -9706,7 +9799,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-store
 Submenu: 3. Applications
-Version: 0.1.26-0
+Version: 0.1.26-3
 Depends: +libc +curl +opkg +luci-base +tar +libuci-lua +mount-utils +luci-lib-taskd +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -9716,7 +9809,7 @@ Category: LuCI
 Repository: base
 Title: LuCI based ipk store
 Maintainer: OpenWrt LuCI community
-Source: istore-ui-v0.1.16-1.tar.gz
+Source: istore-ui-v0.1.26-2.tar.gz
 Type: ipkg
 Description:    luci-app-store is a ipk store developed by LinkEase team
 https://github.com/openwrt/luci
@@ -9876,7 +9969,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-systools
 Submenu: 3. Applications
-Version: 1.0.5-20240624
+Version: 1.0.6-20241113
 Depends: +libc +lsblk +docker +dockerd +luci-lib-iform +luci-lib-taskd +speedtestcli +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -12609,7 +12702,7 @@ Source-Makefile: feeds/smpackage/mihomo/Makefile
 Build-Depends: golang/host
 
 Package: mihomo
-Version: 2024-10-20-3e966e82c793ca99e3badc84bf3f2907b100edae-4
+Version: 2024-11-05-ce52c3438bf5c09f1fe58f6034a9ff7ee4ac3c25-3
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +curl +yq firewall4 +ip-full +kmod-inet-diag +kmod-nft-tproxy +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -12620,7 +12713,7 @@ Repository: base
 Title: A rule based proxy in Go.
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Require-User: root:mihomo=7890
-Source: mihomo-2024-10-20-3e966e82c793ca99e3badc84bf3f2907b100edae.tar.xz
+Source: mihomo-2024-11-05-ce52c3438bf5c09f1fe58f6034a9ff7ee4ac3c25.tar.xz
 License: MIT
 Type: ipkg
 Description:   A rule based proxy in Go.
@@ -13133,7 +13226,7 @@ Source-Makefile: feeds/smpackage/nftables/Makefile
 
 Package: nftables-nojson
 Submenu: Firewall
-Version: 1.0.9-1
+Version: 1.1.1-1
 Depends: +libc +kmod-nft-core +libnftnl
 Conflicts: nftables-json
 Menu-Depends: 
@@ -13145,7 +13238,7 @@ Category: Network
 Repository: base
 Title: nftables userspace utility no JSON support
 Maintainer: 
-Source: nftables-1.0.9.tar.xz
+Source: nftables-1.1.1.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -13156,7 +13249,7 @@ http://netfilter.org/projects/nftables/
 
 Package: nftables-json
 Submenu: Firewall
-Version: 1.0.9-1
+Version: 1.1.1-1
 Depends: +libc +kmod-nft-core +libnftnl +jansson
 Conflicts: 
 Menu-Depends: 
@@ -13167,7 +13260,7 @@ Category: Network
 Repository: base
 Title: nftables userspace utility with JSON support
 Maintainer: 
-Source: nftables-1.0.9.tar.xz
+Source: nftables-1.1.1.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -16018,7 +16111,7 @@ Source-Makefile: feeds/smpackage/v2ray-geodata/Makefile
 
 Package: v2ray-geoip
 Submenu: IP Addresses and Names
-Version: 202411051341-1
+Version: 202411140052-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16039,7 +16132,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite
 Submenu: IP Addresses and Names
-Version: 20241104071109-1
+Version: 20241112092643-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16060,7 +16153,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite-ir
 Submenu: IP Addresses and Names
-Version: 202411040035-1
+Version: 202411110034-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16362,7 +16455,7 @@ Source-Makefile: feeds/smpackage/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 24.11.5-1
+Version: 24.11.11-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -16372,7 +16465,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-core-24.11.5.tar.gz
+Source: xray-core-24.11.11.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -16412,7 +16505,7 @@ Source-Makefile: feeds/smpackage/xunyou/Makefile
 
 Package: xunyou
 Submenu: Web Servers/Proxies
-Version: 2.0.6.3-1
+Version: 2.0.6.4-1
 Depends: +libc +coreutils-nohup
 Conflicts: 
 Menu-Depends: 
@@ -16422,7 +16515,7 @@ Category: Network
 Repository: base
 Title: xunyou
 Maintainer: 
-Source: xunyou_v2.0.6.3.tar.gz
+Source: xunyou_v2.0.6.4.tar.gz
 Type: ipkg
 Description: 	xunyou
 

@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-3ginfo-lite
 Submenu: 3. Applications
-Version: 1.0.58-20231021
+Version: 1.0.58
 Depends: +libc +sms-tool +comgt +kmod-usb-serial-option
 Conflicts: 
 Menu-Depends: 

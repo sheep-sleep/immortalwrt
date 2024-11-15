@@ -1,7 +1,7 @@
 Source-Makefile: feeds/smpackage/libnftnl/Makefile
 
 Package: libnftnl
-Version: 1.2.6-1
+Version: 1.2.8-1
 Depends: +libc +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Low-level netlink library for the nf_tables subsystem
 Maintainer: Steven Barth <steven@midlink.org>
-Source: libnftnl-1.2.6.tar.xz
+Source: libnftnl-1.2.8.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 CPE-ID: cpe:/a:netfilter:libnftnl

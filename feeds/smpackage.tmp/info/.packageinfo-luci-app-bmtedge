@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-bmtedge
 Submenu: 3. Applications
-Version: 1.0.1-20241010
+Version: 1.0.2-20241111
 Depends: +libc +lsblk +docker +dockerd +luci-lib-taskd +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 

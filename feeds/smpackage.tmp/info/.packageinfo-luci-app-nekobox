@@ -2,7 +2,7 @@ Source-Makefile: feeds/smpackage/luci-app-nekobox/Makefile
 
 Package: luci-app-nekobox
 Submenu: 3. Applications
-Version: 1.5.0-cn
+Version: 1.5.1-cn
 Depends: +libc +kmod-tun +bash +curl +jq +php8 +php8-cgi +php8-mod-curl +php8-mod-zip
 Conflicts: 
 Menu-Depends: 

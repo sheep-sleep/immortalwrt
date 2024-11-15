@@ -80,6 +80,7 @@ luci-app-aliyundrive-webdav
 luci-app-alpha-config
 luci-app-amlogic
 luci-app-ap-modem
+luci-app-arcadia
 luci-app-argon-config
 luci-app-argone-config
 luci-app-autoipsetadder
@@ -149,6 +150,7 @@ luci-app-internet-detector/luci-app-internet-detector
 luci-app-iperf3-server
 luci-app-ipsec-server
 luci-app-iptvhelper
+luci-app-istoredup
 luci-app-istoreenhance
 luci-app-istorego
 luci-app-istorepanel

@@ -2,19 +2,19 @@ Source-Makefile: feeds/smpackage/luci-app-nekobox/Makefile
 
 Package: luci-app-nekobox
 Submenu: 3. Applications
-Version: 1.5.1-cn
-Depends: +libc +kmod-tun +bash +curl +jq +php8 +php8-cgi +php8-mod-curl +php8-mod-zip
+Version: 1.5.7-cn
+Depends: +libc +kmod-tun +bash +curl +jq +php8 +php8-cgi +php8-mod-curl +php8-mod-intl +zoneinfo-asia
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: opt
 Category: LuCI
 Repository: base
-Title: LuCI support for mihomo
+Title: LuCI support for mihomo & sing-box
 Maintainer: Thaolga <https://github.com/Thaolga/luci-app-nekobox>
 Source: 
 Type: ipkg
-Description:     A LuCI support for mihomo
+Description:     A LuCI support for mihomo & sing-box
 Thaolga <https://github.com/Thaolga/luci-app-nekobox>
 @@
 

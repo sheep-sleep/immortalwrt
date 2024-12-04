@@ -2,7 +2,7 @@ Source-Makefile: feeds/smpackage/linkease/Makefile
 
 Package: linkease
 Submenu: Web Servers/Proxies
-Version: 1.6.7--1
+Version: 1.6.8--2
 Depends: +libc @(arm||x86_64||aarch64) +linkmount
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: LinkEase - the file cloud
 Maintainer: 
-Source: linkease-binary-1.6.7.tar.gz
+Source: linkease-binary-1.6.8.tar.gz
 Type: ipkg
 Description:   LinkEase is a file cloud
 https://www.linkease.com/

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/smpackage/tcping/Makefile
 
 Package: tcping
-Version: 0.3-1
+Version: 0.3-2
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -9,12 +9,12 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: tcping measures the latency of a tcp-connection
+Title: tcping measures the latency of a tcp-connection (IPv4/IPv6 support)
 Maintainer: 
 Source: tcping-0.3.tar.gz
 License: GPL-2.0-only
 Type: ipkg
-Description: tcping measures the latency of a tcp-connection
+Description: tcping measures the latency of a tcp-connection (IPv4/IPv6 support)
 https://github.com/jlyo/tcping
 
 @@

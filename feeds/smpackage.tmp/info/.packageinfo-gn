@@ -2,7 +2,7 @@ Source-Makefile: feeds/smpackage/gn/Makefile
 Build-Types: host
 
 Package: gn
-Version: 2024-10-14-feafd1012a32c05ec6095f69ddc3850afb621f3a-1
+Version: 2024-11-22-468c6128db7fabe32a29d4753460ef53594406fc-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Development
 Repository: base
 Title: A meta-build system that generates build files for Ninja
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: gn-2024-10-14-feafd1012a32c05ec6095f69ddc3850afb621f3a.tar.xz
+Source: gn-2024-11-22-468c6128db7fabe32a29d4753460ef53594406fc.tar.xz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg

@@ -2,7 +2,7 @@ Source-Makefile: feeds/smpackage/natflow/Makefile
 
 Package: kmod-natflow
 Submenu: Fast Forward Stacks
-Version: <LINUX_VERSION>+20241020-
+Version: <LINUX_VERSION>+20241128-
 Depends: +kmod-ipt-conntrack +kmod-ipt-nat +kmod-ipt-ipset +kmod-br-netfilter +LINUX_5_4:kmod-nf-flow
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Section: kernel
 Category: X
 Title: natflow kernel driver
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natflow-20241020.tar.gz
+Source: natflow-20241128.tar.gz
 License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_NF_CONNTRACK_MARK=y CONFIG_NETFILTER_INGRESS=y
@@ -21,7 +21,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natflow-boot
 Submenu: Fast Forward Stacks
-Version: 20241020
+Version: 20241128
 Depends: +libc +kmod-natflow
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: X
 Repository: base
 Title: natflow boot init script
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natflow-20241020.tar.gz
+Source: natflow-20241128.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: natflow boot init script
@@ -40,7 +40,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natflow-auth
 Submenu: Fast Forward Stacks
-Version: 20241020
+Version: 20241128
 Depends: +libc +kmod-natflow +ipset +lua-ipops
 Conflicts: 
 Menu-Depends: 
@@ -50,7 +50,7 @@ Category: X
 Repository: base
 Title: natflow auth init script
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natflow-20241020.tar.gz
+Source: natflow-20241128.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: natflow auth init script
@@ -59,7 +59,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natflow-hostacl
 Submenu: Fast Forward Stacks
-Version: 20241020
+Version: 20241128
 Depends: +libc +natflow-auth +urllogger
 Conflicts: 
 Menu-Depends: 
@@ -69,7 +69,7 @@ Category: X
 Repository: base
 Title: natflow hostacl init script
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natflow-20241020.tar.gz
+Source: natflow-20241128.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: natflow hostacl init script

@@ -2,7 +2,7 @@ Source-Makefile: feeds/smpackage/UA2F/openwrt/Makefile
 
 Package: ua2f
 Submenu: Routing and Redirection
-Version: 4.8.3-1
+Version: 4.9.3-1
 Depends: +libc +libnetfilter-conntrack +libnetfilter-queue +libpthread +libuci +USE_GLIBC:libasan +(PACKAGE_nftables-json||PACKAGE_nftables-nojson):kmod-nft-queue +PACKAGE_firewall:iptables-mod-conntrack-extra +PACKAGE_firewall:iptables-mod-filter +PACKAGE_firewall:iptables-mod-nfqueue
 Conflicts: 
 Menu-Depends: 
@@ -33,6 +33,13 @@ Config:
     default "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.68"
     help
       Specify the custom User-Agent string to use when UA2F_CUSTOM_USER_AGENT is enabled.
+
+  config UA2F_DEBUG_BUILD
+    bool "Enable debug build"
+    depends on PACKAGE_ua2f
+    default n
+    help
+      Enable this option to build UA2F with debug symbols and optimizations disabled.
 @@
 
 

@@ -3,7 +3,7 @@ Build-Depends: qt6tools/host
 
 Package: qbittorrent
 Submenu: BitTorrent
-Version: 5.0.1-1
+Version: 5.0.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcc +libstdcpp +rblibtorrent +libQt6Core +libQt6Network +libQt6Sql +libQt6Xml +qt6-plugin-libqopensslbackend +qt6-plugin-libqsqlite
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: bittorrent client programmed in C++ / Qt
 Maintainer: 
-Source: qBittorrent-release-5.0.1.tar.gz
+Source: qBittorrent-release-5.0.2.tar.gz
 License: GPL-2.0+
 LicenseFiles: COPYING
 CPE-ID: cpe:/a:qbittorrent:qbittorrent

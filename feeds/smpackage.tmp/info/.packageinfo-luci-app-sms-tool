@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-sms-tool
 Submenu: 3. Applications
-Version: 1.9.6-20230501
+Version: 1.9.6
 Depends: +libc +sms-tool +kmod-usb-serial +kmod-usb-serial-option +comgt +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 

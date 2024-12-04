@@ -1,7 +1,7 @@
 Source-Makefile: feeds/smpackage/lucky/Makefile
 
 Package: lucky
-Version: 2.13.4-1
+Version: 2.14.0-1
 Depends: +libc @(i386||x86_64||arm||aarch64||mipsel||mips)
 Conflicts: 
 Menu-Depends: 

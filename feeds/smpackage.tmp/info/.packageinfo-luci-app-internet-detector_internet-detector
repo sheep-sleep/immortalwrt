@@ -1,7 +1,7 @@
 Source-Makefile: feeds/smpackage/luci-app-internet-detector/internet-detector/Makefile
 
 Package: internet-detector
-Version: 1.3.0-1
+Version: 1.3.1-1
 Depends: +libc +lua +luaposix +libuci-lua
 Conflicts: 
 Menu-Depends: 

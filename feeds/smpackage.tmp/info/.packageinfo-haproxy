@@ -2,7 +2,7 @@ Source-Makefile: feeds/smpackage/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 3.0.5-1
+Version: 3.0.6-1
 Depends: +libc +libpcre2 +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer with SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-3.0.5.tar.gz
+Source: haproxy-3.0.6.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:haproxy:haproxy
@@ -26,7 +26,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: halog
 Submenu: Web Servers/Proxies
-Version: 3.0.5-1
+Version: 3.0.6-1
 Depends: +libc haproxy
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer with SSL support halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-3.0.5.tar.gz
+Source: haproxy-3.0.6.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:haproxy:haproxy
@@ -49,7 +49,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 3.0.5-1
+Version: 3.0.6-1
 Depends: +libc +libpcre2 +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: haproxy
 Menu-Depends: 
@@ -60,7 +60,7 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer without SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-3.0.5.tar.gz
+Source: haproxy-3.0.6.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:haproxy:haproxy

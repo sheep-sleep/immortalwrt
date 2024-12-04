@@ -49,7 +49,7 @@ Source-Makefile: feeds/smpackage/UA2F/openwrt/Makefile
 
 Package: ua2f
 Submenu: Routing and Redirection
-Version: 4.8.3-1
+Version: 4.9.3-1
 Depends: +libc +libnetfilter-conntrack +libnetfilter-queue +libpthread +libuci +USE_GLIBC:libasan +(PACKAGE_nftables-json||PACKAGE_nftables-nojson):kmod-nft-queue +PACKAGE_firewall:iptables-mod-conntrack-extra +PACKAGE_firewall:iptables-mod-filter +PACKAGE_firewall:iptables-mod-nfqueue
 Conflicts: 
 Menu-Depends: 
@@ -80,6 +80,13 @@ Config:
     default "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.68"
     help
       Specify the custom User-Agent string to use when UA2F_CUSTOM_USER_AGENT is enabled.
+
+  config UA2F_DEBUG_BUILD
+    bool "Enable debug build"
+    depends on PACKAGE_ua2f
+    default n
+    help
+      Enable this option to build UA2F with debug symbols and optimizations disabled.
 @@
 
 
@@ -215,7 +222,7 @@ Build-Depends: golang/host
 
 Package: alist
 Submenu: Web Servers/Proxies
-Version: 3.39.1-1
+Version: 3.40.0-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -225,7 +232,7 @@ Category: Network
 Repository: base
 Title: A file list program that supports multiple storage
 Maintainer: sbwml <admin@cooluc.com>
-Source: alist-3.39.1.tar.gz
+Source: alist-3.40.0.tar.gz
 License: GPL-3.0
 Type: ipkg
 Description:   A file list program that supports multiple storage, powered by Gin and Solidjs.
@@ -593,7 +600,7 @@ Source-Makefile: feeds/smpackage/chinadns-ng/Makefile
 
 Package: chinadns-ng
 Submenu: IP Addresses and Names
-Version: 2024.10.14-1
+Version: 2024.11.17-1
 Depends: +libc @(aarch64||arm||i386||mips||mipsel||mips64||x86_64) +ipset
 Conflicts: 
 Menu-Depends: 
@@ -603,7 +610,7 @@ Category: Network
 Repository: base
 Title: ChinaDNS next generation, refactoring with epoll and ipset.
 Maintainer: sbwml <admin@cooluc.com>
-Source: chinadns-ng-2024.10.14-
+Source: chinadns-ng-2024.11.17-
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -1904,6 +1911,54 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 
+Source-Makefile: feeds/smpackage/frp/Makefile
+Build-Depends: golang/host
+
+Package: frpc
+Submenu: Web Servers/Proxies
+Version: 0.51.3-1
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: frpc - fast reverse proxy client
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: frp-0.51.3.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     frpc is a fast reverse proxy client to help you expose a local server behind
+    a NAT or firewall to the internet.
+https://github.com/fatedier/frp
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: frps
+Submenu: Web Servers/Proxies
+Version: 0.51.3-1
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: frps - fast reverse proxy server
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: frp-0.51.3.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     frps is a fast reverse proxy server to help you expose a local server behind
+    a NAT or firewall to the internet.
+https://github.com/fatedier/frp
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+
 Source-Makefile: feeds/smpackage/fullconenat/Makefile
 
 Package: iptables-mod-fullconenat
@@ -2016,7 +2071,7 @@ Source-Makefile: feeds/smpackage/gn/Makefile
 Build-Types: host
 
 Package: gn
-Version: 2024-10-14-feafd1012a32c05ec6095f69ddc3850afb621f3a-1
+Version: 2024-11-22-468c6128db7fabe32a29d4753460ef53594406fc-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -2026,7 +2081,7 @@ Category: Development
 Repository: base
 Title: A meta-build system that generates build files for Ninja
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: gn-2024-10-14-feafd1012a32c05ec6095f69ddc3850afb621f3a.tar.xz
+Source: gn-2024-11-22-468c6128db7fabe32a29d4753460ef53594406fc.tar.xz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -2090,7 +2145,7 @@ Source-Makefile: feeds/smpackage/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 3.0.5-1
+Version: 3.0.6-1
 Depends: +libc +libpcre2 +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -2101,7 +2156,7 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer with SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-3.0.5.tar.gz
+Source: haproxy-3.0.6.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:haproxy:haproxy
@@ -2114,7 +2169,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: halog
 Submenu: Web Servers/Proxies
-Version: 3.0.5-1
+Version: 3.0.6-1
 Depends: +libc haproxy
 Conflicts: 
 Menu-Depends: 
@@ -2125,7 +2180,7 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer with SSL support halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-3.0.5.tar.gz
+Source: haproxy-3.0.6.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:haproxy:haproxy
@@ -2137,7 +2192,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 3.0.5-1
+Version: 3.0.6-1
 Depends: +libc +libpcre2 +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: haproxy
 Menu-Depends: 
@@ -2148,7 +2203,7 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer without SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-3.0.5.tar.gz
+Source: haproxy-3.0.6.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:haproxy:haproxy
@@ -2157,6 +2212,31 @@ Description:    Open source Reliable, High Performance TCP/HTTP Load Balancer.
  This package is built without SSL support.
 https://www.haproxy.org/
 Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
+@@
+
+
+Source-Makefile: feeds/smpackage/headscale/Makefile
+Build-Depends: golang/host
+
+Package: headscale
+Submenu: VPN
+Version: 0.21.0-1
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A Tailscale control server
+Maintainer: 
+Source: headscale-0.21.0.tar.gz
+License: BSD-3-clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description: An open source, self-hosted implementation of the Tailscale control server.
+https://github.com/juanfont/headscale
+
 @@
 
 
@@ -2410,7 +2490,7 @@ Steven Barth <steven@midlink.org>
 Source-Makefile: feeds/smpackage/libtorrent-rasterbar/Makefile
 
 Package: libtorrent-rasterbar
-Version: 2.0.9-1
+Version: 2.0.10-1
 Depends: +libc +boost +boost-system +libopenssl +libatomic +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -2420,7 +2500,7 @@ Category: Libraries
 Repository: base
 Title: Rasterbar BitTorrent library
 Maintainer: David Yang <mmyangfl@gmail.com>
-Source: libtorrent-rasterbar-2.0.9.tar.gz
+Source: libtorrent-rasterbar-2.0.10.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -2435,7 +2515,7 @@ Source-Makefile: feeds/smpackage/linkease/Makefile
 
 Package: linkease
 Submenu: Web Servers/Proxies
-Version: 1.6.7--1
+Version: 1.6.8--2
 Depends: +libc @(arm||x86_64||aarch64) +linkmount
 Conflicts: 
 Menu-Depends: 
@@ -2445,7 +2525,7 @@ Category: Network
 Repository: base
 Title: LinkEase - the file cloud
 Maintainer: 
-Source: linkease-binary-1.6.7.tar.gz
+Source: linkease-binary-1.6.8.tar.gz
 Type: ipkg
 Description:   LinkEase is a file cloud
 https://www.linkease.com/
@@ -3044,7 +3124,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-arcadia
 Submenu: 3. Applications
-Version: 0.0.1-1
+Version: 0.0.2-1
 Depends: +libc +lsblk +docker +dockerd +luci-lib-taskd +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -4219,6 +4299,48 @@ Description:     Translation for luci-app-ddnsto - 简体中文 (Chinese Simplif
 @@
 
 
+Source-Makefile: feeds/smpackage/luci-app-design-config/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-design-config
+Submenu: 3. Applications
+Version: x
+Depends: +libc +luci-compat +luci-theme-design +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI page for Design Config
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI page for Design Config
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-design-config-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-design-config
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-design-config - zh-cn translation
+Maintainer: gngpp <gngppz@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-design-config - 简体中文 (Chinese Simplified)
+gngpp <gngppz@gmail.com>
+@@
+
+
 Source-Makefile: feeds/smpackage/luci-app-dnscrypt-proxy2/Makefile
 
 Package: luci-app-dnscrypt-proxy2
@@ -4733,7 +4855,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 Package: luci-app-fchomo
 Submenu: 3. Applications
 Version: x
-Depends: +libc +mihomo +ca-bundle +firewall4 +kmod-inet-diag +kmod-nft-tproxy +yq
+Depends: +libc +mihomo +ca-bundle +firewall4 +kmod-inet-diag +kmod-nft-tproxy +yq +wget-ssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5916,7 +6038,7 @@ OpenWrt LuCI community
 Source-Makefile: feeds/smpackage/luci-app-internet-detector/internet-detector/Makefile
 
 Package: internet-detector
-Version: 1.3.0-1
+Version: 1.3.1-1
 Depends: +libc +lua +luaposix +libuci-lua
 Conflicts: 
 Menu-Depends: 
@@ -5939,7 +6061,7 @@ gSpot <https://github.com/gSpotx2f/luci-app-internet-detector>
 Source-Makefile: feeds/smpackage/luci-app-internet-detector/internet-detector-mod-email/Makefile
 
 Package: internet-detector-mod-email
-Version: 1.3.0-1
+Version: 1.3.1-1
 Depends: +libc +internet-detector +mailsend
 Conflicts: 
 Menu-Depends: 
@@ -5960,7 +6082,7 @@ gSpot <https://github.com/gSpotx2f/luci-app-internet-detector>
 Source-Makefile: feeds/smpackage/luci-app-internet-detector/internet-detector-mod-modem-restart/Makefile
 
 Package: internet-detector-mod-modem-restart
-Version: 1.3.0-1
+Version: 1.3.1-1
 Depends: +libc +internet-detector +modemmanager
 Conflicts: 
 Menu-Depends: 
@@ -5983,7 +6105,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-internet-detector
 Submenu: 3. Applications
-Version: 1.3.0-r1
+Version: 1.3.1
 Depends: +libc +internet-detector
 Conflicts: 
 Menu-Depends: 
@@ -6153,7 +6275,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-istoredup
 Submenu: 3. Applications
-Version: 1.1.3-20241110
+Version: 1.1.5-20241129
 Depends: +libc +lsblk +docker +dockerd +luci-lib-taskd +vmease +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -6936,7 +7058,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-mihomo
 Submenu: 3. Applications
-Version: 1.11.0
+Version: 1.13.2
 Depends: +libc +luci-base +mihomo
 Conflicts: 
 Menu-Depends: 
@@ -6999,7 +7121,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-mosdns
 Submenu: 3. Applications
-Version: 1.6.6
+Version: 1.6.7
 Depends: +libc +mosdns +jsonfilter +curl +v2ray-geoip +v2ray-geosite +v2dat
 Conflicts: 
 Menu-Depends: 
@@ -7444,19 +7566,19 @@ Source-Makefile: feeds/smpackage/luci-app-nekobox/Makefile
 
 Package: luci-app-nekobox
 Submenu: 3. Applications
-Version: 1.5.1-cn
-Depends: +libc +kmod-tun +bash +curl +jq +php8 +php8-cgi +php8-mod-curl +php8-mod-zip
+Version: 1.5.7-cn
+Depends: +libc +kmod-tun +bash +curl +jq +php8 +php8-cgi +php8-mod-curl +php8-mod-intl +zoneinfo-asia
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: opt
 Category: LuCI
 Repository: base
-Title: LuCI support for mihomo
+Title: LuCI support for mihomo & sing-box
 Maintainer: Thaolga <https://github.com/Thaolga/luci-app-nekobox>
 Source: 
 Type: ipkg
-Description:     A LuCI support for mihomo
+Description:     A LuCI support for mihomo & sing-box
 Thaolga <https://github.com/Thaolga/luci-app-nekobox>
 @@
 
@@ -8192,7 +8314,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-passwall
 Submenu: 3. Applications
-Version: 4.78-4
+Version: 24.12.1
 Depends: +libc +coreutils +coreutils-base64 +coreutils-nohup +curl +chinadns-ng +dns2socks +dns2tcp +dnsmasq-full +ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc +microsocks +resolveip +tcping +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -8311,6 +8433,11 @@ config PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geodata
 	select PACKAGE_v2ray-geosite
 	default n
 
+config PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geoview
+	bool "Include V2ray_Geoview"
+	select PACKAGE_geoview
+	default y if aarch64||arm||i386||x86_64
+
 config PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin
 	bool "Include V2ray-Plugin (Shadowsocks Plugin)"
 	select PACKAGE_v2ray-plugin
@@ -8355,7 +8482,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-passwall2
 Submenu: 3. Applications
-Version: 24.11.13
+Version: 24.11.19
 Depends: +libc +coreutils +coreutils-base64 +coreutils-nohup +curl +ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc +resolveip +tcping +xray-core +v2ray-geoip +v2ray-geosite +unzip +PACKAGE_luci-app-passwall2_INCLUDE_IPv6_Nat:ip6tables-mod-nat +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -9270,7 +9397,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-sms-tool
 Submenu: 3. Applications
-Version: 1.9.6-20230501
+Version: 1.9.6
 Depends: +libc +sms-tool +kmod-usb-serial +kmod-usb-serial-option +comgt +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -9799,7 +9926,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-store
 Submenu: 3. Applications
-Version: 0.1.26-3
+Version: 0.1.27-1
 Depends: +libc +curl +opkg +luci-base +tar +libuci-lua +mount-utils +luci-lib-taskd +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -9809,7 +9936,7 @@ Category: LuCI
 Repository: base
 Title: LuCI based ipk store
 Maintainer: OpenWrt LuCI community
-Source: istore-ui-v0.1.26-2.tar.gz
+Source: istore-ui-v0.1.27-1.tar.gz
 Type: ipkg
 Description:    luci-app-store is a ipk store developed by LinkEase team
 https://github.com/openwrt/luci
@@ -11946,7 +12073,7 @@ Sense <sensec@gmail.com>
 Source-Makefile: feeds/smpackage/luci-app-xray/core/Makefile
 
 Package: luci-app-xray
-Version: 3.4.1-1
+Version: 3.5.0-1
 Depends: +libc firewall4 +kmod-nft-tproxy +luci-base +xray-core +dnsmasq +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -12001,7 +12128,7 @@ endmenu
 Source-Makefile: feeds/smpackage/luci-app-xray/status/Makefile
 
 Package: luci-app-xray-status
-Version: 3.4.1-1
+Version: 3.5.0-1
 Depends: +libc luci-app-xray +wget
 Conflicts: 
 Menu-Depends: 
@@ -12607,7 +12734,7 @@ OpenWrt LuCI community
 Source-Makefile: feeds/smpackage/lucky/Makefile
 
 Package: lucky
-Version: 2.13.4-1
+Version: 2.14.0-1
 Depends: +libc @(i386||x86_64||arm||aarch64||mipsel||mips)
 Conflicts: 
 Menu-Depends: 
@@ -12702,7 +12829,7 @@ Source-Makefile: feeds/smpackage/mihomo/Makefile
 Build-Depends: golang/host
 
 Package: mihomo
-Version: 2024-11-05-ce52c3438bf5c09f1fe58f6034a9ff7ee4ac3c25-3
+Version: 2024-11-30-9de9f1ef518206e43e9f8300cfc724d8e128d049-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +curl +yq firewall4 +ip-full +kmod-inet-diag +kmod-nft-tproxy +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -12713,7 +12840,7 @@ Repository: base
 Title: A rule based proxy in Go.
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Require-User: root:mihomo=7890
-Source: mihomo-2024-11-05-ce52c3438bf5c09f1fe58f6034a9ff7ee4ac3c25.tar.xz
+Source: mihomo-2024-11-30-9de9f1ef518206e43e9f8300cfc724d8e128d049.tar.xz
 License: MIT
 Type: ipkg
 Description:   A rule based proxy in Go.
@@ -12937,7 +13064,7 @@ Source-Makefile: feeds/smpackage/naiveproxy/Makefile
 
 Package: naiveproxy
 Submenu: Web Servers/Proxies
-Version: 130.0.6723.40-5-1
+Version: 131.0.6778.86-1-1
 Depends: +libc @(aarch64||arm||i386||mipsel||riscv64||x86_64) +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -12947,7 +13074,7 @@ Category: Network
 Repository: base
 Title: Make a fortune quietly
 Maintainer: sbwml <admin@cooluc.com>
-Source: naiveproxy-v130.0.6723.40-5-openwrt-.tar.xz
+Source: naiveproxy-v131.0.6778.86-1-openwrt-.tar.xz
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -12984,7 +13111,7 @@ Source-Makefile: feeds/smpackage/natflow/Makefile
 
 Package: kmod-natflow
 Submenu: Fast Forward Stacks
-Version: <LINUX_VERSION>+20241020-
+Version: <LINUX_VERSION>+20241128-
 Depends: +kmod-ipt-conntrack +kmod-ipt-nat +kmod-ipt-ipset +kmod-br-netfilter +LINUX_5_4:kmod-nf-flow
 Conflicts: 
 Menu-Depends: 
@@ -12993,7 +13120,7 @@ Section: kernel
 Category: X
 Title: natflow kernel driver
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natflow-20241020.tar.gz
+Source: natflow-20241128.tar.gz
 License: GPL-2.0
 Type: ipkg
 Kernel-Config: CONFIG_NF_CONNTRACK_MARK=y CONFIG_NETFILTER_INGRESS=y
@@ -13003,7 +13130,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natflow-boot
 Submenu: Fast Forward Stacks
-Version: 20241020
+Version: 20241128
 Depends: +libc +kmod-natflow
 Conflicts: 
 Menu-Depends: 
@@ -13013,7 +13140,7 @@ Category: X
 Repository: base
 Title: natflow boot init script
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natflow-20241020.tar.gz
+Source: natflow-20241128.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: natflow boot init script
@@ -13022,7 +13149,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natflow-auth
 Submenu: Fast Forward Stacks
-Version: 20241020
+Version: 20241128
 Depends: +libc +kmod-natflow +ipset +lua-ipops
 Conflicts: 
 Menu-Depends: 
@@ -13032,7 +13159,7 @@ Category: X
 Repository: base
 Title: natflow auth init script
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natflow-20241020.tar.gz
+Source: natflow-20241128.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: natflow auth init script
@@ -13041,7 +13168,7 @@ Chen Minqiang <ptpt52@gmail.com>
 
 Package: natflow-hostacl
 Submenu: Fast Forward Stacks
-Version: 20241020
+Version: 20241128
 Depends: +libc +natflow-auth +urllogger
 Conflicts: 
 Menu-Depends: 
@@ -13051,7 +13178,7 @@ Category: X
 Repository: base
 Title: natflow hostacl init script
 Maintainer: Chen Minqiang <ptpt52@gmail.com>
-Source: natflow-20241020.tar.gz
+Source: natflow-20241128.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: natflow hostacl init script
@@ -13098,6 +13225,30 @@ Type: ipkg
 Description: Open Port under FullCone NAT (NAT 1)
 https://github.com/MikeWang000000/Natter
 
+@@
+
+
+Source-Makefile: feeds/smpackage/netatalk/Makefile
+Build-Depends: libevent2
+
+Package: netatalk
+Submenu: Filesystem
+Version: 3.1.12-3
+Depends: +libc +libattr +libdb47 +libgcrypt +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: netatalk
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: netatalk-3.1.12.tar.bz2
+CPE-ID: cpe:/a:netatalk:netatalk
+Type: ipkg
+Description: netatalk
+http://netatalk.sourceforge.net
+Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 
@@ -13596,7 +13747,7 @@ Source-Makefile: feeds/smpackage/njitclient/Makefile
 
 Package: njit8021xclient
 Submenu: Campus Network
-Version: 2.0-2018-11-24-dd28c17f24275bbbf4c44504b832c0f1e6b9ae40-1
+Version: 2018-11-24-dd28c17f24275bbbf4c44504b832c0f1e6b9ae40-2
 Depends: +libc +libopenssl +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -13606,7 +13757,7 @@ Category: Network
 Repository: base
 Title: NJIT 802.1X client program
 Maintainer: 
-Source: njit8021xclient-2.0-2018-11-24-dd28c17f24275bbbf4c44504b832c0f1e6b9ae40.tar.xz
+Source: njit8021xclient-2018-11-24-dd28c17f24275bbbf4c44504b832c0f1e6b9ae40.tar.xz
 Type: ipkg
 Description:   802.1X client from Nanjing Institude of Technology, compatable with
   H3C iNode 802.1X client. Support H3C/iNode's private authentication
@@ -13900,6 +14051,52 @@ Description:   pdnsd, is an IPv6 capable proxy DNS server with permanent caching
 @@
 
 
+Source-Makefile: feeds/smpackage/pgyvpn/Makefile
+
+Package: pgyvpn
+Submenu: VPN
+Version: 3.1.0-1
+Depends: +libc @(arm||aarch64||mips||mipsel||i386||x86_64) +iptables +libopenssl +librt +libpthread +libstdcpp +kmod-tun
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: PuGongYing VPN, Fast networking
+Maintainer: Oray <developer@oray.com>
+Source: pgyvpnsvr
+Type: ipkg
+Description:   PuGongYing VPN is a product of Oray Company, support custom network, account security
+  system, traffic monitoring, cloud application access, virtual serial port, etc.
+https://pgy.oray.com/
+Oray <developer@oray.com>
+@@
+
+
+Source-Makefile: feeds/smpackage/phtunnel/Makefile
+
+Package: phtunnel
+Submenu: Web Servers/Proxies
+Version: 1.0.0-1
+Depends: +libc @(arm||aarch64||mips||mipsel||i386||x86_64) +libpthread +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: HSK Intranet penetration
+Maintainer: Oray <developer@oray.com>
+Source: phtunnel
+Type: ipkg
+Description:   PHTunnel is the core component of HSK intranet penetration, which can easily implement high-performance
+  reverse proxy applications, supports TCP, HTTP, HTTPS protocols, end-to-end TLS encrypted communication,
+  black and white list anti-black verification, etc. Through PHTunnel, external network devices can easily
+  penetrate various complex routes and firewalls to access devices on the internal network.
+https://hsk.oray.com/
+Oray <developer@oray.com>
+@@
+
+
 Source-Makefile: feeds/smpackage/ppp/Makefile
 Build-Depends: libpcap
 
@@ -14155,7 +14352,7 @@ Build-Depends: qt6tools/host
 
 Package: qbittorrent
 Submenu: BitTorrent
-Version: 5.0.1-1
+Version: 5.0.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcc +libstdcpp +rblibtorrent +libQt6Core +libQt6Network +libQt6Sql +libQt6Xml +qt6-plugin-libqopensslbackend +qt6-plugin-libqsqlite
 Conflicts: 
 Menu-Depends: 
@@ -14165,7 +14362,7 @@ Category: Network
 Repository: base
 Title: bittorrent client programmed in C++ / Qt
 Maintainer: 
-Source: qBittorrent-release-5.0.1.tar.gz
+Source: qBittorrent-release-5.0.2.tar.gz
 License: GPL-2.0+
 LicenseFiles: COPYING
 CPE-ID: cpe:/a:qbittorrent:qbittorrent
@@ -14186,7 +14383,7 @@ Build-Types: host
 
 Package: libQt6Concurrent
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Core
 Conflicts: 
 Menu-Depends: 
@@ -14196,16 +14393,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 Concurrent Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 Concurrent v6.8.0 library.
+Description:     This package provides the Qt6 Concurrent v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6Core
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libpcre2-16
 Conflicts: 
 Menu-Depends: 
@@ -14215,16 +14412,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 Core Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 Core v6.8.0 library.
+Description:     This package provides the Qt6 Core v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6DBus
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Core
 Conflicts: 
 Menu-Depends: 
@@ -14234,16 +14431,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 DBus Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 DBus v6.8.0 library.
+Description:     This package provides the Qt6 DBus v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6Gui
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6DBus +libdrm +libfreetype
 Conflicts: 
 Menu-Depends: 
@@ -14253,16 +14450,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 Gui Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 Gui v6.8.0 library.
+Description:     This package provides the Qt6 Gui v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6Network
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Core +libopenssl +krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -14272,16 +14469,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 Network Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 Network v6.8.0 library.
+Description:     This package provides the Qt6 Network v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6PrintSupport
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Widgets
 Conflicts: 
 Menu-Depends: 
@@ -14291,16 +14488,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 PrintSupport Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 PrintSupport v6.8.0 library.
+Description:     This package provides the Qt6 PrintSupport v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6Sql
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Core
 Conflicts: 
 Menu-Depends: 
@@ -14310,16 +14507,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 Sql Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 Sql v6.8.0 library.
+Description:     This package provides the Qt6 Sql v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6Test
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Core
 Conflicts: 
 Menu-Depends: 
@@ -14329,16 +14526,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 Test Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 Test v6.8.0 library.
+Description:     This package provides the Qt6 Test v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6Widgets
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Gui
 Conflicts: 
 Menu-Depends: 
@@ -14348,16 +14545,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 Widgets Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 Widgets v6.8.0 library.
+Description:     This package provides the Qt6 Widgets v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: libQt6Xml
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Core
 Conflicts: 
 Menu-Depends: 
@@ -14367,16 +14564,16 @@ Category: Libraries
 Repository: base
 Title: Qt6 Xml Library
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
-Description:     This package provides the Qt6 Xml v6.8.0 library.
+Description:     This package provides the Qt6 Xml v6.8.1 library.
 http://qt-project.org
 
 @@
 
 Package: qt6-plugin-libqtuiotouchplugin
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Gui +libQt6Network
 Conflicts: 
 Menu-Depends: 
@@ -14386,7 +14583,7 @@ Category: Libraries
 Repository: base
 Title: Qt6 Plugin libqtuiotouchplugin
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Description: Qt6 Plugin libqtuiotouchplugin
 http://qt-project.org
@@ -14395,7 +14592,7 @@ http://qt-project.org
 
 Package: qt6-plugin-libqnetworkmanager
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6DBus +libQt6Network
 Conflicts: 
 Menu-Depends: 
@@ -14405,7 +14602,7 @@ Category: Libraries
 Repository: base
 Title: Qt6 Plugin libqnetworkmanager
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Description: Qt6 Plugin libqnetworkmanager
 http://qt-project.org
@@ -14414,7 +14611,7 @@ http://qt-project.org
 
 Package: qt6-plugin-libqminimal
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Gui
 Conflicts: 
 Menu-Depends: 
@@ -14424,7 +14621,7 @@ Category: Libraries
 Repository: base
 Title: Qt6 Plugin libqminimal
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Description: Qt6 Plugin libqminimal
 http://qt-project.org
@@ -14433,7 +14630,7 @@ http://qt-project.org
 
 Package: qt6-plugin-libqoffscreen
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Gui
 Conflicts: 
 Menu-Depends: 
@@ -14443,7 +14640,7 @@ Category: Libraries
 Repository: base
 Title: Qt6 Plugin libqoffscreen
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Description: Qt6 Plugin libqoffscreen
 http://qt-project.org
@@ -14452,7 +14649,7 @@ http://qt-project.org
 
 Package: qt6-plugin-libqxdgdesktopportal
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Gui
 Conflicts: 
 Menu-Depends: 
@@ -14462,7 +14659,7 @@ Category: Libraries
 Repository: base
 Title: Qt6 Plugin libqxdgdesktopportal
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Description: Qt6 Plugin libqxdgdesktopportal
 http://qt-project.org
@@ -14471,7 +14668,7 @@ http://qt-project.org
 
 Package: qt6-plugin-libqsqlite
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Sql
 Conflicts: 
 Menu-Depends: 
@@ -14481,7 +14678,7 @@ Category: Libraries
 Repository: base
 Title: Qt6 Plugin libqsqlite
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Description: Qt6 Plugin libqsqlite
 http://qt-project.org
@@ -14490,7 +14687,7 @@ http://qt-project.org
 
 Package: qt6-plugin-libqcertonlybackend
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Network
 Conflicts: 
 Menu-Depends: 
@@ -14500,7 +14697,7 @@ Category: Libraries
 Repository: base
 Title: Qt6 Plugin libqcertonlybackend
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Description: Qt6 Plugin libqcertonlybackend
 http://qt-project.org
@@ -14509,7 +14706,7 @@ http://qt-project.org
 
 Package: qt6-plugin-libqopensslbackend
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib +libQt6Network
 Conflicts: 
 Menu-Depends: 
@@ -14519,7 +14716,7 @@ Category: Libraries
 Repository: base
 Title: Qt6 Plugin libqopensslbackend
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Description: Qt6 Plugin libqopensslbackend
 http://qt-project.org
@@ -14528,7 +14725,7 @@ http://qt-project.org
 
 Package: libQt6
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc @!arc +libatomic +libstdcpp +zlib
 Conflicts: 
 Menu-Depends: 
@@ -14538,7 +14735,7 @@ Category: Libraries
 Repository: base
 Title: Qt6
 Maintainer: 
-Source: qtbase-6.8.0.tar.gz
+Source: qtbase-6.8.1.tar.gz
 Type: ipkg
 Hidden: 1
 Description: Qt6
@@ -14553,7 +14750,7 @@ Build-Types: host
 
 Package: qt6tools
 Submenu: Qt6
-Version: 6.8.0-1
+Version: 6.8.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -14563,7 +14760,7 @@ Category: Utilities
 Repository: base
 Title: Qt6 Tools
 Maintainer: 
-Source: qttools-6.8.0.tar.gz
+Source: qttools-6.8.1.tar.gz
 Type: ipkg
 Build-Only: 1
 Description: Qt6 Tools
@@ -14603,7 +14800,7 @@ Source-Makefile: feeds/smpackage/quickstart/Makefile
 
 Package: quickstart
 Submenu: Web Servers/Proxies
-Version: 0.9.3-1
+Version: 0.9.5-1
 Depends: +libc @(x86_64||aarch64||arm) +shadow-utils +shadow-useradd +mount-utils +block-mount +lsblk +e2fsprogs +parted +smartmontools +smartd +mdadm +ip-full +ubus +uci +bash
 Conflicts: 
 Menu-Depends: 
@@ -14613,7 +14810,7 @@ Category: Network
 Repository: base
 Title: Quickstart, the quick start.
 Maintainer: 
-Source: quickstart-binary-0.9.3.tar.gz
+Source: quickstart-binary-0.9.5.tar.gz
 Type: ipkg
 Description:   Quickstart is a dashboard & user guide
 https://easepi.linkease.com/
@@ -14826,7 +15023,7 @@ Source-Makefile: feeds/smpackage/scutclient/Makefile
 
 Package: scutclient
 Submenu: Campus Network
-Version: 3.1.3-2021-11-26-b265ca8ffea204bd1788b0addd42184496b8a118-1
+Version: 3.1.3-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -14836,7 +15033,7 @@ Category: Network
 Repository: base
 Title: SCUT Dr.com client
 Maintainer: Scutclient Project
-Source: scutclient-3.1.3-2021-11-26-b265ca8ffea204bd1788b0addd42184496b8a118.tar.xz
+Source: scutclient-3.1.3.tar.xz
 License: AGPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -15134,7 +15331,7 @@ Build-Depends: golang/host
 
 Package: sing-box
 Submenu: Web Servers/Proxies
-Version: 1.10.1-1
+Version: 1.10.3-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -15144,7 +15341,7 @@ Category: Network
 Repository: base
 Title: The universal proxy platform.
 Maintainer: 
-Source: sing-box-1.10.1.tar.gz
+Source: sing-box-1.10.3.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -15503,7 +15700,7 @@ jjm2473 <jjm2473@gmail.com>
 Source-Makefile: feeds/smpackage/tcping/Makefile
 
 Package: tcping
-Version: 0.3-1
+Version: 0.3-2
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -15511,12 +15708,12 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: tcping measures the latency of a tcp-connection
+Title: tcping measures the latency of a tcp-connection (IPv4/IPv6 support)
 Maintainer: 
 Source: tcping-0.3.tar.gz
 License: GPL-2.0-only
 Type: ipkg
-Description: tcping measures the latency of a tcp-connection
+Description: tcping measures the latency of a tcp-connection (IPv4/IPv6 support)
 https://github.com/jlyo/tcping
 
 @@
@@ -16111,7 +16308,7 @@ Source-Makefile: feeds/smpackage/v2ray-geodata/Makefile
 
 Package: v2ray-geoip
 Submenu: IP Addresses and Names
-Version: 202411140052-1
+Version: 202411280056-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16153,7 +16350,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite-ir
 Submenu: IP Addresses and Names
-Version: 202411110034-1
+Version: 202412020038-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16170,6 +16367,33 @@ Type: ipkg
 Description: Iran Geosite List for V2Ray
 https://www.v2fly.org
 Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+
+Source-Makefile: feeds/smpackage/v2ray-geoview/Makefile
+Build-Depends: golang/host
+
+Package: geoview
+Submenu: Web Servers/Proxies
+Version: 0.0.6-1
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A geofile toolkit (geoview)
+Maintainer: snowie2000
+Source: geoview-0.0.6.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   geoview is a handy tool to extract useful information from geo* files.
+
+  This package contains the geoview.
+https://github.com/snowie2000/geoview
+snowie2000
 @@
 
 
@@ -16203,7 +16427,7 @@ Build-Depends: golang/host
 
 Package: v2raya
 Submenu: Web Servers/Proxies
-Version: 2.2.6.2-1
+Version: 2.2.6.3-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +kmod-nft-tproxy +xray-core
 Conflicts: 
 Menu-Depends: 
@@ -16213,7 +16437,7 @@ Category: Network
 Repository: base
 Title: A Linux web GUI client of Project V
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: v2rayA-2.2.6.2.tar.gz
+Source: v2rayA-2.2.6.3.tar.gz
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg
@@ -16242,6 +16466,29 @@ Type: ipkg
 Description: A efficient data transmission tool
 http://www.verysync.com
 
+@@
+
+
+Source-Makefile: feeds/smpackage/vlmcsd/Makefile
+
+Package: vlmcsd
+Version: svn1113-3
+Depends: +libc +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: vlmcsd for OpenWRT
+Maintainer: fuyumi <280604399@qq.com>
+Source: vlmcsd-svn1113.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   vlmcsd is a KMS Emulator in C.
+http://forums.mydigitallife.info/threads/50234
+fuyumi <280604399@qq.com>
 @@
 
 
@@ -16455,7 +16702,7 @@ Source-Makefile: feeds/smpackage/xray-core/Makefile
 Build-Depends: golang/host
 
 Package: xray-core
-Version: 24.11.11-1
+Version: 24.11.30-1
 Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -16465,7 +16712,7 @@ Category: Network
 Repository: base
 Title: A platform for building proxies to bypass network restrictions
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: xray-core-24.11.11.tar.gz
+Source: xray-core-24.11.30.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg

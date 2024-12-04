@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-passwall
 Submenu: 3. Applications
-Version: 4.78-4
+Version: 24.12.1
 Depends: +libc +coreutils +coreutils-base64 +coreutils-nohup +curl +chinadns-ng +dns2socks +dns2tcp +dnsmasq-full +ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc +microsocks +resolveip +tcping +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -121,6 +121,11 @@ config PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geodata
 	select PACKAGE_v2ray-geoip
 	select PACKAGE_v2ray-geosite
 	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geoview
+	bool "Include V2ray_Geoview"
+	select PACKAGE_geoview
+	default y if aarch64||arm||i386||x86_64
 
 config PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin
 	bool "Include V2ray-Plugin (Shadowsocks Plugin)"

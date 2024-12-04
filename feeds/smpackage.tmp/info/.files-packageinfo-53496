@@ -44,6 +44,7 @@ ffmpeg-static
 filebrowser
 firewall
 firewall4
+frp
 fullconenat
 fullconenat-nft
 gmediarender
@@ -51,6 +52,7 @@ gn
 go-aliyundrive-webdav
 gost
 haproxy
+headscale
 homebox
 homeredirect
 hysteria
@@ -109,6 +111,7 @@ luci-app-daed
 luci-app-daed-next
 luci-app-ddns-go
 luci-app-ddnsto
+luci-app-design-config
 luci-app-dnscrypt-proxy2
 luci-app-dnsfilter
 luci-app-dnsmasq-ipset
@@ -306,6 +309,7 @@ nanohatoled
 natflow
 natter
 natter2
+netatalk
 netdata
 netkeeper
 netkeeper-interception
@@ -323,6 +327,8 @@ openwrt-minisign
 opkg
 oscam
 pdnsd-alt
+pgyvpn
+phtunnel
 ppp
 qbittorrent
 qt6base
@@ -369,9 +375,11 @@ uwsgi
 v2dat
 v2ray-core
 v2ray-geodata
+v2ray-geoview
 v2ray-plugin
 v2raya
 verysync
+vlmcsd
 vmease
 vsftpd
 watchcat

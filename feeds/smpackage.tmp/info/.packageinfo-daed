@@ -4,7 +4,7 @@ Build-Depends: golang/host bpf-headers
 Package: daed
 Submenu: Web Servers/Proxies
 Version: 0.8.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @HAS_BPF_TOOLCHAIN +ca-bundle +kmod-sched-core +kmod-sched-bpf +kmod-xdp-sockets-diag +kmod-veth
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @HAS_BPF_TOOLCHAIN +ca-bundle +kmod-sched-core +kmod-sched-bpf +kmod-xdp-sockets-diag +kmod-veth
 Conflicts: 
 Menu-Depends: 
 Provides: 

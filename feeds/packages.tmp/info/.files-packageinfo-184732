@@ -1066,6 +1066,7 @@ net/miniupnpc
 net/miniupnpd
 net/modemband
 net/modemmanager
+net/mosdns
 net/mosh
 net/mosquitto
 net/mrmctl

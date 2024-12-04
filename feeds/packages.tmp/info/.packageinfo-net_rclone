@@ -4,7 +4,7 @@ Build-Depends: golang/host
 Package: rclone
 Submenu: File Transfer
 Version: 1.68.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +fuse3-utils
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +fuse3-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -190,7 +190,7 @@ Build-Depends: golang/host
 
 Package: gotop
 Version: 4.2.0-4
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1363,7 +1363,7 @@ Build-Depends: golang/host
 
 Package: gitlab-runner
 Version: 16.0.2-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -1416,7 +1416,7 @@ Build-Types: host
 
 Package: go-rice
 Version: 1.0.2-3
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -31957,7 +31957,7 @@ Build-Depends: golang/host
 
 Package: boringssl
 Version: 20210608-1
-Depends: +libc +libstdcpp @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @!(mips||mips64)
+Depends: +libc +libstdcpp @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @!(mips||mips64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -63230,7 +63230,7 @@ Build-Depends: golang/host
 
 Package: lux
 Version: 0.24.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ffmpeg
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ffmpeg
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -64250,7 +64250,7 @@ Build-Depends: golang/host
 
 Package: adguardhome
 Version: 0.107.46-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -64354,7 +64354,7 @@ Build-Depends: golang/host
 
 Package: alist
 Version: 3.35.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +fuse-utils
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +fuse-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65217,7 +65217,7 @@ Build-Depends: golang/host go-rice/host
 Package: baidupcs-web
 Submenu: Download Manager
 Version: 3.7.4-nnew-3
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65666,7 +65666,7 @@ Build-Depends: golang/host
 Package: bitsrunlogin-go
 Submenu: Campus Network
 Version: 1.5.2-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65858,7 +65858,7 @@ Build-Depends: golang/host
 Package: brook
 Submenu: Web Servers/Proxies
 Version: 20240606-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -65939,7 +65939,7 @@ Build-Depends: golang/host
 
 Package: cdnspeedtest
 Version: 2.2.5-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66183,7 +66183,7 @@ Build-Depends: golang/host
 Package: clash
 Submenu: Web Servers/Proxies
 Version: 1.18.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66215,7 +66215,7 @@ Build-Depends: golang/host
 Package: cloudflared
 Submenu: Web Servers/Proxies
 Version: 2024.4.1-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66271,7 +66271,7 @@ Build-Depends: golang/host
 
 Package: cni-route-override
 Version: 0.1-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66435,7 +66435,7 @@ Build-Depends: golang/host
 
 Package: crowdsec
 Version: 1.6.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66464,7 +66464,7 @@ Build-Depends: golang/host
 
 Package: crowdsec-firewall-bouncer
 Version: 0.0.29-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66569,7 +66569,7 @@ Build-Depends: golang/host bpf-headers
 Package: dae
 Submenu: Web Servers/Proxies
 Version: 0.6.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @HAS_BPF_TOOLCHAIN +ca-bundle +kmod-sched-core +kmod-sched-bpf +kmod-xdp-sockets-diag +kmod-veth
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @HAS_BPF_TOOLCHAIN +ca-bundle +kmod-sched-core +kmod-sched-bpf +kmod-xdp-sockets-diag +kmod-veth
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66641,7 +66641,7 @@ Build-Depends: golang/host bpf-headers
 Package: daed
 Submenu: Web Servers/Proxies
 Version: 0.6.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @HAS_BPF_TOOLCHAIN +ca-bundle +kmod-sched-core +kmod-sched-bpf +kmod-xdp-sockets-diag +kmod-veth
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @HAS_BPF_TOOLCHAIN +ca-bundle +kmod-sched-core +kmod-sched-bpf +kmod-xdp-sockets-diag +kmod-veth
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -66944,7 +66944,7 @@ Build-Depends: golang/host
 Package: ddns-go
 Submenu: IP Addresses and Names
 Version: 6.7.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67578,7 +67578,7 @@ Build-Depends: golang/host
 Package: dns-over-https
 Submenu: IP Addresses and Names
 Version: 2.3.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67726,7 +67726,7 @@ Build-Depends: golang/host
 
 Package: dnscrypt-proxy2
 Version: 2.1.5-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: dnscrypt-proxy
 Menu-Depends: 
 Provides: 
@@ -67748,7 +67748,7 @@ Josef Schlehofer <pepe.schlehofer@gmail.com>
 Package: golang-github-jedisct1-dnscrypt-proxy2-dev
 Submenu: Go
 Version: 2.1.5-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: dnscrypt-proxy
 Menu-Depends: 
 Provides: 
@@ -67859,7 +67859,7 @@ Build-Depends: golang/host
 Package: dnslookup
 Submenu: IP Addresses and Names
 Version: 1.10.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67885,7 +67885,7 @@ Build-Depends: golang/host
 Package: dnsproxy
 Submenu: IP Addresses and Names
 Version: 0.67.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -67912,7 +67912,7 @@ Build-Depends: golang/host
 
 Package: dnstap
 Version: 0.4.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69387,7 +69387,7 @@ Build-Depends: golang/host
 Package: frpc
 Submenu: Web Servers/Proxies
 Version: 0.51.3-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -69409,7 +69409,7 @@ Richard Yu <yurichard3839@gmail.com>
 Package: frps
 Submenu: Web Servers/Proxies
 Version: 0.51.3-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -70031,7 +70031,7 @@ Build-Depends: golang/host
 Package: gateway-go
 Submenu: Web Servers/Proxies
 Version: 0.2.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -70226,7 +70226,7 @@ Build-Depends: golang/host
 
 Package: geoipupdate
 Version: 4.9.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -70257,7 +70257,7 @@ Build-Depends: golang/host
 
 Package: geth
 Version: 1.10.20-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +BUILD_NLS:libiconv-full
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -70390,7 +70390,7 @@ Build-Depends: golang/host
 
 Package: git-lfs
 Version: 3.0.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +git
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +git
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71122,7 +71122,7 @@ Build-Depends: golang/host
 
 Package: go-nats
 Version: 0.0.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71146,7 +71146,7 @@ Build-Depends: golang/host
 
 Package: go-wol
 Version: 2.0.1-5
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71170,7 +71170,7 @@ Build-Depends: golang/host
 
 Package: gost
 Version: 2.11.5-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -71637,7 +71637,7 @@ Build-Depends: golang/host
 
 Package: hysteria
 Version: 2.5.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -72214,7 +72214,7 @@ Build-Depends: golang/host
 
 Package: irtt
 Version: 0.9.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -72545,7 +72545,7 @@ Build-Depends: golang/host
 Package: kcptun-config
 Submenu: Web Servers/Proxies
 Version: 20230207-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -73503,7 +73503,7 @@ Build-Depends: golang/host
 Package: librespeed-go
 Submenu: Web Servers/Proxies
 Version: 1.1.5-4
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75359,6 +75359,31 @@ Config:
 @@
 
 
+Source-Makefile: feeds/packages/net/mosdns/Makefile
+Build-Depends: golang/host
+
+Package: mosdns
+Submenu: IP Addresses and Names
+Version: 5.3.3-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: mosdns-neo
+Section: net
+Category: Network
+Repository: base
+Title: A plug-in DNS forwarder/splitter
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: mosdns-5.3.3.tar.gz
+License: GPL-3.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description: A plug-in DNS forwarder/splitter
+https://github.com/IrineSistiana/mosdns
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+
 Source-Makefile: feeds/packages/net/mosh/Makefile
 Build-Depends: protobuf/host
 
@@ -75963,7 +75988,7 @@ Build-Depends: golang/host
 
 Package: nebula
 Version: 1.8.2-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +kmod-tun
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75987,7 +76012,7 @@ Stan Grishin <stangri@melmac.ca>
 
 Package: nebula-cert
 Version: 1.8.2-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76297,7 +76322,7 @@ Build-Depends: golang/host
 Package: netbird
 Submenu: VPN
 Version: 0.25.8-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76540,7 +76565,7 @@ Build-Depends: golang/host
 
 Package: nextdns
 Version: 1.43.5-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76561,7 +76586,7 @@ Olivier Poitrey <rs@nextdns.io>
 Package: golang-github-nextdns-nextdns-dev
 Submenu: Go
 Version: 1.43.5-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -76587,7 +76612,7 @@ Build-Depends: golang/host
 
 Package: nexttrace
 Version: 1.3.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -77463,7 +77488,7 @@ Build-Depends: golang/host
 Package: npc
 Submenu: Web Servers/Proxies
 Version: 0.26.18-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -77487,7 +77512,7 @@ https://ehang-io.github.io/nps
 Package: nps
 Submenu: Web Servers/Proxies
 Version: 0.26.18-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -79091,7 +79116,7 @@ Build-Depends: golang/host
 
 Package: obfs4proxy
 Version: 0.0.14-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -79125,7 +79150,7 @@ Jeffery To <jeffery.to@gmail.com>
 Package: golang-gitlab-yawning-obfs4-dev
 Submenu: Go
 Version: 0.0.14-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -80313,7 +80338,7 @@ Build-Depends: golang/host
 Package: overture
 Submenu: IP Addresses and Names
 Version: 1.7-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -81502,7 +81527,7 @@ Build-Depends: golang/host
 
 Package: q
 Version: 0.19.2-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -81857,7 +81882,7 @@ Build-Depends: golang/host
 Package: rclone
 Submenu: File Transfer
 Version: 1.68.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +fuse3-utils
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +fuse3-utils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -82061,7 +82086,7 @@ Build-Depends: golang/host
 
 Package: restic-rest-server
 Version: 0.11.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83261,7 +83286,7 @@ Build-Depends: golang/host
 Package: sing-box
 Submenu: Web Servers/Proxies
 Version: 1.9.6-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +(SING_BOX_BUILD_GVISOR||SING_BOX_BUILD_LWIP):kmod-tun
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +kmod-inet-diag +kmod-netlink-diag +(SING_BOX_BUILD_GVISOR||SING_BOX_BUILD_LWIP):kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83475,7 +83500,7 @@ Build-Depends: golang/host
 
 Package: snowflake-broker
 Version: 2.8.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83502,7 +83527,7 @@ Daniel Golle <daniel@makrotopia.org>, Nick Hainke <vincent@systemli.org>
 
 Package: snowflake-client
 Version: 2.8.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83529,7 +83554,7 @@ Daniel Golle <daniel@makrotopia.org>, Nick Hainke <vincent@systemli.org>
 
 Package: snowflake-probetest
 Version: 2.8.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83556,7 +83581,7 @@ Daniel Golle <daniel@makrotopia.org>, Nick Hainke <vincent@systemli.org>
 
 Package: snowflake-proxy
 Version: 2.8.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83583,7 +83608,7 @@ Daniel Golle <daniel@makrotopia.org>, Nick Hainke <vincent@systemli.org>
 
 Package: snowflake-server
 Version: 2.8.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -83937,7 +83962,7 @@ Build-Depends: golang/host
 
 Package: speedtest-go
 Version: 1.7.8-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -86701,7 +86726,7 @@ Build-Depends: golang/host
 Package: tailscale
 Submenu: VPN
 Version: 1.58.2-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +kmod-tun
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: tailscaled
@@ -87431,7 +87456,7 @@ Build-Depends: golang/host
 Package: transfer
 Submenu: File Transfer
 Version: 0.4.17-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -87624,7 +87649,7 @@ Build-Depends: golang/host
 Package: trojan-go
 Submenu: Web Servers/Proxies
 Version: 0.10.6-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89037,7 +89062,7 @@ Build-Depends: golang/host
 
 Package: v2ray-core
 Version: 5.18.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89109,7 +89134,7 @@ Build-Depends: golang/host
 Package: v2ray-plugin
 Submenu: Web Servers/Proxies
 Version: 5.13.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89134,7 +89159,7 @@ Build-Depends: golang/host
 Package: v2raya
 Submenu: Web Servers/Proxies
 Version: 2.2.5.7-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +kmod-nft-tproxy +xray-core
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +kmod-nft-tproxy +xray-core
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89670,7 +89695,7 @@ Build-Depends: golang/host
 
 Package: wifi-presence
 Version: 0.3.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89880,7 +89905,7 @@ Build-Depends: golang/host
 
 Package: xray-core
 Version: 1.8.24-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -89929,7 +89954,7 @@ Build-Depends: golang/host
 Package: xray-plugin
 Submenu: Web Servers/Proxies
 Version: 1.8.4-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -90887,7 +90912,7 @@ Build-Depends: golang/host
 Package: yggdrasil
 Submenu: Routing and Redirection
 Version: 0.5.4-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @IPV6 +kmod-tun
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @IPV6 +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -92219,7 +92244,7 @@ Build-Depends: golang/host
 
 Package: ztdns
 Version: 0.0.2-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -95589,7 +95614,7 @@ Build-Depends: golang/host
 
 Package: cni
 Version: 1.1.2-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -95619,7 +95644,7 @@ Build-Depends: golang/host
 
 Package: cni-plugins
 Version: 1.1.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ip-full +kmod-veth
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ip-full +kmod-veth
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -95644,7 +95669,7 @@ Build-Depends: golang/host
 
 Package: cni-plugins-nft
 Version: 1.0.12-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +nftables
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +nftables
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -97184,7 +97209,7 @@ Build-Depends: golang/host
 Package: containerd
 Menu: 1
 Version: 1.7.20-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +btrfs-progs +runc
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +btrfs-progs +runc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -99686,7 +99711,7 @@ Build-Depends: golang/host
 
 Package: ctop
 Version: 0.7.7-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -100104,7 +100129,7 @@ Build-Depends: golang/host
 
 Package: docker
 Version: 27.1.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -100128,7 +100153,7 @@ Build-Depends: golang/host
 
 Package: docker-compose
 Version: 2.26.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +docker
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +docker
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -100153,7 +100178,7 @@ Build-Depends: golang/host
 Package: dockerd
 Menu: 1
 Version: 27.1.1-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-certificates +containerd +iptables +iptables-mod-extra +IPV6:ip6tables +IPV6:kmod-ipt-nat6 +KERNEL_SECCOMP:libseccomp +kmod-ipt-nat +kmod-ipt-physdev +kmod-nf-ipvs +kmod-veth +tini +uci-firewall @!(mips||mipsel)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-certificates +containerd +iptables +iptables-mod-extra +IPV6:ip6tables +IPV6:kmod-ipt-nat6 +KERNEL_SECCOMP:libseccomp +kmod-ipt-nat +kmod-ipt-physdev +kmod-nf-ipvs +kmod-veth +tini +uci-firewall @!(mips||mipsel)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -100591,7 +100616,7 @@ Build-Depends: golang/host node/host
 
 Package: filebrowser
 Version: 2.28.0-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -102693,7 +102718,7 @@ Build-Depends: golang/host
 
 Package: librespeed-cli
 Version: 1.0.10-3
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -104678,7 +104703,7 @@ Build-Depends: golang/host
 
 Package: miniflux
 Version: 2.0.42-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +pgsql-server
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +pgsql-server
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -105361,7 +105386,7 @@ Build-Depends: golang/host
 
 Package: oci-runtime-tool
 Version: 1.0.0-pre20210326-3
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -109458,7 +109483,7 @@ Build-Depends: golang/host protobuf/host btrfs-progs
 
 Package: podman
 Version: 4.9.3-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +conmon +libgpgme +libseccomp +nsenter +zoneinfo-simple +kmod-veth +slirp4netns +netavark +aardvark-dns +catatonit +crun +PODMAN_SELINUX_SUPPORT:libselinux
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +conmon +libgpgme +libseccomp +nsenter +zoneinfo-simple +kmod-veth +slirp4netns +netavark +aardvark-dns +catatonit +crun +PODMAN_SELINUX_SUPPORT:libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -110326,7 +110351,7 @@ Build-Depends: golang/host
 
 Package: prometheus-statsd-exporter
 Version: 0.15.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -110952,7 +110977,7 @@ Build-Depends: golang/host
 
 Package: restic
 Version: 0.15.2-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -111465,7 +111490,7 @@ Build-Depends: golang/host
 
 Package: runc
 Version: 1.1.13-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +KERNEL_SECCOMP_FILTER:libseccomp
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +KERNEL_SECCOMP_FILTER:libseccomp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -116442,7 +116467,7 @@ Build-Depends: golang/host
 
 Package: syncthing
 Version: 1.24.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -116467,7 +116492,7 @@ Paul Spooren <mail@aparcar.org>
 
 Package: stdiscosrv
 Version: 1.24.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -116488,7 +116513,7 @@ Paul Spooren <mail@aparcar.org>
 
 Package: strelaysrv
 Version: 1.24.0-2
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -116677,7 +116702,7 @@ Build-Depends: golang/host
 
 Package: telegraf
 Version: 1.23.4-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -116699,7 +116724,7 @@ Jonathan Pagel <jonny_tischbein@systemli.org>
 
 Package: telegraf-full
 Version: 1.23.4-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -120475,7 +120500,7 @@ Build-Depends: golang/host
 
 Package: yq
 Version: 4.44.3-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 

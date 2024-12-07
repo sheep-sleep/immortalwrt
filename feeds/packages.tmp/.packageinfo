@@ -3039,8 +3039,8 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.23.4-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +golang-src
+Version: 1.21.13-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3049,7 +3049,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.23.4.src.tar.gz
+Source: go1.21.13.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:golang:go
@@ -3076,8 +3076,8 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.23.4-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Version: 1.21.13-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3086,7 +3086,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.23.4.src.tar.gz
+Source: go1.21.13.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:golang:go
@@ -3109,8 +3109,8 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.23.4-1
-Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Version: 1.21.13-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -3119,7 +3119,7 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.23.4.src.tar.gz
+Source: go1.21.13.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 CPE-ID: cpe:/a:golang:go
@@ -89123,6 +89123,72 @@ Description:     Project V is a set of network tools that help you to build your
   It secures your network connections and thus protects your privacy.
 
   This includes extra resources for v2ray-core.
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+
+Source-Makefile: feeds/packages/net/v2ray-geodata/Makefile
+
+Package: v2ray-geoip
+Submenu: IP Addresses and Names
+Version: 202409120050-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: v2ray-geodata xray-geodata xray-geoip
+Section: net
+Category: Network
+Repository: base
+Title: GeoIP List for V2Ray
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: 
+License: CC-BY-SA-4.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description: GeoIP List for V2Ray
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: v2ray-geosite
+Submenu: IP Addresses and Names
+Version: 20240914091803-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: v2ray-geodata xray-geodata xray-geosite
+Section: net
+Category: Network
+Repository: base
+Title: Geosite List for V2Ray
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Geosite List for V2Ray
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: v2ray-geosite-ir
+Submenu: IP Addresses and Names
+Version: 202409160034-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: xray-geosite-ir
+Section: net
+Category: Network
+Repository: base
+Title: Iran Geosite List for V2Ray
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Iran Geosite List for V2Ray
 https://www.v2fly.org
 Tianling Shen <cnsztl@immortalwrt.org>
 @@

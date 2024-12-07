@@ -1278,6 +1278,7 @@ net/uspot
 net/usteer
 net/uwsgi
 net/v2ray-core
+net/v2ray-geodata
 net/v2ray-plugin
 net/v2raya
 net/vallumd

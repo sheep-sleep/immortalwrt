@@ -1,0 +1,21 @@
+Source-Makefile: feeds/smpackage/floatip/Makefile
+
+Package: floatip
+Submenu: IP Addresses and Names
+Version: 1.0.1-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Float IP
+Maintainer: jjm2473 <jjm2473@gmail.com>
+Source: 
+Type: ipkg
+Description: 	Auto setup an IP if some host down
+jjm2473 <jjm2473@gmail.com>
+@@
+
+

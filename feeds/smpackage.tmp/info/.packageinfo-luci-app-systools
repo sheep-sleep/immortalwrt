@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-systools
 Submenu: 3. Applications
-Version: 1.0.6-20241113
+Version: 1.0.8-20241207
 Depends: +libc +lsblk +docker +dockerd +luci-lib-iform +luci-lib-taskd +speedtestcli +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 

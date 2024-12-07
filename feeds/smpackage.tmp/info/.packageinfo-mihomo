@@ -2,7 +2,7 @@ Source-Makefile: feeds/smpackage/mihomo/Makefile
 Build-Depends: golang/host
 
 Package: mihomo
-Version: 2024-11-30-9de9f1ef518206e43e9f8300cfc724d8e128d049-1
+Version: 2024-12-06-d6b496d3c0eb99cf966e0f93ed00434797e5216c-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +curl +yq firewall4 +ip-full +kmod-inet-diag +kmod-nft-tproxy +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: base
 Title: A rule based proxy in Go.
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Require-User: root:mihomo=7890
-Source: mihomo-2024-11-30-9de9f1ef518206e43e9f8300cfc724d8e128d049.tar.xz
+Source: mihomo-2024-12-06-d6b496d3c0eb99cf966e0f93ed00434797e5216c.tar.xz
 License: MIT
 Type: ipkg
 Description:   A rule based proxy in Go.

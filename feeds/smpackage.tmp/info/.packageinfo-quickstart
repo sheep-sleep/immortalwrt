@@ -2,7 +2,7 @@ Source-Makefile: feeds/smpackage/quickstart/Makefile
 
 Package: quickstart
 Submenu: Web Servers/Proxies
-Version: 0.9.5-1
+Version: 0.9.6-1
 Depends: +libc @(x86_64||aarch64||arm) +shadow-utils +shadow-useradd +mount-utils +block-mount +lsblk +e2fsprogs +parted +smartmontools +smartd +mdadm +ip-full +ubus +uci +bash
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: Quickstart, the quick start.
 Maintainer: 
-Source: quickstart-binary-0.9.5.tar.gz
+Source: quickstart-binary-0.9.6.tar.gz
 Type: ipkg
 Description:   Quickstart is a dashboard & user guide
 https://easepi.linkease.com/

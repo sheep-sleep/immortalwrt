@@ -44,6 +44,7 @@ ffmpeg-static
 filebrowser
 firewall
 firewall4
+floatip
 frp
 fullconenat
 fullconenat-nft
@@ -225,7 +226,6 @@ luci-app-shortcutmenu
 luci-app-shutdown
 luci-app-smartdns
 luci-app-sms-tool
-luci-app-snmpd
 luci-app-socat
 luci-app-softethervpn
 luci-app-speedtest-web

@@ -1,8 +1,8 @@
 Source-Makefile: feeds/istore/luci/taskd/Makefile
 
 Package: taskd
-Version: 1.0.3-1
-Depends: +libc +procd +script-utils +coreutils-stty
+Version: 1.0.3-2
+Depends: +libc +procd +script-utils +coreutils +coreutils-stty
 Conflicts: 
 Menu-Depends: 
 Provides: 

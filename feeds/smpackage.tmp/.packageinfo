@@ -1911,6 +1911,27 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 
+Source-Makefile: feeds/smpackage/floatip/Makefile
+
+Package: floatip
+Submenu: IP Addresses and Names
+Version: 1.0.1-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Float IP
+Maintainer: jjm2473 <jjm2473@gmail.com>
+Source: 
+Type: ipkg
+Description: 	Auto setup an IP if some host down
+jjm2473 <jjm2473@gmail.com>
+@@
+
+
 Source-Makefile: feeds/smpackage/frp/Makefile
 Build-Depends: golang/host
 
@@ -4444,7 +4465,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-dnsproxy
 Submenu: 3. Applications
-Version: 20231105
+Version: x
 Depends: +libc +dnsproxy
 Conflicts: 
 Menu-Depends: 
@@ -7058,7 +7079,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-mihomo
 Submenu: 3. Applications
-Version: 1.13.2
+Version: 1.13.3
 Depends: +libc +luci-base +mihomo
 Conflicts: 
 Menu-Depends: 
@@ -7566,7 +7587,7 @@ Source-Makefile: feeds/smpackage/luci-app-nekobox/Makefile
 
 Package: luci-app-nekobox
 Submenu: 3. Applications
-Version: 1.5.7-cn
+Version: 1.5.8-cn
 Depends: +libc +kmod-tun +bash +curl +jq +php8 +php8-cgi +php8-mod-curl +php8-mod-intl +zoneinfo-asia
 Conflicts: 
 Menu-Depends: 
@@ -8482,7 +8503,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-passwall2
 Submenu: 3. Applications
-Version: 24.11.19
+Version: 24.12.05
 Depends: +libc +coreutils +coreutils-base64 +coreutils-nohup +curl +ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc +resolveip +tcping +xray-core +v2ray-geoip +v2ray-geosite +unzip +PACKAGE_luci-app-passwall2_INCLUDE_IPv6_Nat:ip6tables-mod-nat +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -8598,6 +8619,11 @@ config PACKAGE_luci-app-passwall2_INCLUDE_tuic_client
 	depends on aarch64||arm||i386||x86_64
 	select PACKAGE_tuic-client
 	default n
+
+config PACKAGE_luci-app-passwall2_INCLUDE_V2ray_Geoview
+	bool "Include V2ray_Geoview"
+	select PACKAGE_geoview
+	default y if aarch64||arm||i386||x86_64
 
 config PACKAGE_luci-app-passwall2_INCLUDE_V2ray_Plugin
 	bool "Include V2ray-Plugin (Shadowsocks Plugin)"
@@ -9472,110 +9498,6 @@ Description:     Translation for luci-app-sms-tool - 简体中文 (Chinese Simpl
 @@
 
 
-Source-Makefile: feeds/smpackage/luci-app-snmpd/Makefile
-Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
-
-Package: luci-app-snmpd
-Submenu: 3. Applications
-Version: x
-Depends: +libc +snmpd +snmptrapd +snmp-utils +snmp-mibs +luci-lua-runtime
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: LuCI SNMPD Interface
-Maintainer: OpenWrt LuCI community
-Source: 
-License: GPLv3
-Type: ipkg
-Description: LuCI SNMPD Interface
-https://github.com/openwrt/luci
-OpenWrt LuCI community
-@@
-
-Package: luci-i18n-snmpd-de
-Default: LUCI_LANG_de||(ALL&&m)
-Version: x
-Depends: +libc luci-app-snmpd
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-snmpd - de translation
-Maintainer: 
-Source: 
-License: GPLv3
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-snmpd - Deutsch (German)
-
-@@
-
-Package: luci-i18n-snmpd-fr
-Default: LUCI_LANG_fr||(ALL&&m)
-Version: x
-Depends: +libc luci-app-snmpd
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-snmpd - fr translation
-Maintainer: 
-Source: 
-License: GPLv3
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-snmpd - Français (French)
-
-@@
-
-Package: luci-i18n-snmpd-it
-Default: LUCI_LANG_it||(ALL&&m)
-Version: x
-Depends: +libc luci-app-snmpd
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-snmpd - it translation
-Maintainer: 
-Source: 
-License: GPLv3
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-snmpd - Italiano (Italian)
-
-@@
-
-Package: luci-i18n-snmpd-zh-cn
-Default: LUCI_LANG_zh_Hans||(ALL&&m)
-Version: x
-Depends: +libc luci-app-snmpd
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: luci-app-snmpd - zh-cn translation
-Maintainer: 
-Source: 
-License: GPLv3
-Type: ipkg
-Hidden: 1
-Description:     Translation for luci-app-snmpd - 简体中文 (Chinese Simplified)
-
-@@
-
-
 Source-Makefile: feeds/smpackage/luci-app-socat/Makefile
 Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
 
@@ -9926,7 +9848,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-store
 Submenu: 3. Applications
-Version: 0.1.27-1
+Version: 0.1.26-4
 Depends: +libc +curl +opkg +luci-base +tar +libuci-lua +mount-utils +luci-lib-taskd +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -9936,7 +9858,7 @@ Category: LuCI
 Repository: base
 Title: LuCI based ipk store
 Maintainer: OpenWrt LuCI community
-Source: istore-ui-v0.1.27-1.tar.gz
+Source: istore-ui-v0.1.26-2.tar.gz
 Type: ipkg
 Description:    luci-app-store is a ipk store developed by LinkEase team
 https://github.com/openwrt/luci
@@ -10096,7 +10018,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-systools
 Submenu: 3. Applications
-Version: 1.0.6-20241113
+Version: 1.0.8-20241207
 Depends: +libc +lsblk +docker +dockerd +luci-lib-iform +luci-lib-taskd +speedtestcli +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -10311,7 +10233,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-tinyfilemanager
 Submenu: 3. Applications
-Version: 2.5.3-20240823
+Version: 2.6
 Depends: +libc +php8 +php8-cgi +php8-fastcgi +php8-fpm +php8-mod-session +php8-mod-ctype +php8-mod-fileinfo +php8-mod-zip +php8-mod-iconv +php8-mod-mbstring +coreutils-stat +zoneinfo-asia +bash +curl +tar
 Conflicts: 
 Menu-Depends: 
@@ -12829,7 +12751,7 @@ Source-Makefile: feeds/smpackage/mihomo/Makefile
 Build-Depends: golang/host
 
 Package: mihomo
-Version: 2024-11-30-9de9f1ef518206e43e9f8300cfc724d8e128d049-1
+Version: 2024-12-06-d6b496d3c0eb99cf966e0f93ed00434797e5216c-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle +curl +yq firewall4 +ip-full +kmod-inet-diag +kmod-nft-tproxy +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -12840,7 +12762,7 @@ Repository: base
 Title: A rule based proxy in Go.
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Require-User: root:mihomo=7890
-Source: mihomo-2024-11-30-9de9f1ef518206e43e9f8300cfc724d8e128d049.tar.xz
+Source: mihomo-2024-12-06-d6b496d3c0eb99cf966e0f93ed00434797e5216c.tar.xz
 License: MIT
 Type: ipkg
 Description:   A rule based proxy in Go.
@@ -14800,7 +14722,7 @@ Source-Makefile: feeds/smpackage/quickstart/Makefile
 
 Package: quickstart
 Submenu: Web Servers/Proxies
-Version: 0.9.5-1
+Version: 0.9.6-1
 Depends: +libc @(x86_64||aarch64||arm) +shadow-utils +shadow-useradd +mount-utils +block-mount +lsblk +e2fsprogs +parted +smartmontools +smartd +mdadm +ip-full +ubus +uci +bash
 Conflicts: 
 Menu-Depends: 
@@ -14810,7 +14732,7 @@ Category: Network
 Repository: base
 Title: Quickstart, the quick start.
 Maintainer: 
-Source: quickstart-binary-0.9.5.tar.gz
+Source: quickstart-binary-0.9.6.tar.gz
 Type: ipkg
 Description:   Quickstart is a dashboard & user guide
 https://easepi.linkease.com/
@@ -14872,7 +14794,7 @@ Source-Makefile: feeds/smpackage/redsocks2/Makefile
 
 Package: redsocks2
 Submenu: Web Servers/Proxies
-Version: 0.70-1
+Version: 0.71-1
 Depends: +libc +libevent2 +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -14882,7 +14804,7 @@ Category: Network
 Repository: base
 Title: Redirect TCP connection to proxy server
 Maintainer: semigodking <semigodking@gmail.com>
-Source: redsocks-0.70.tar.gz
+Source: redsocks-0.71.tar.gz
 License: Apache-2.0
 Type: ipkg
 Description:   This is a modified version of original redsocks.
@@ -15680,8 +15602,8 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source-Makefile: feeds/smpackage/taskd/Makefile
 
 Package: taskd
-Version: 1.0.3-1
-Depends: +libc +procd +script-utils +coreutils-stty
+Version: 1.0.3-2
+Depends: +libc +procd +script-utils +coreutils +coreutils-stty
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -16308,7 +16230,7 @@ Source-Makefile: feeds/smpackage/v2ray-geodata/Makefile
 
 Package: v2ray-geoip
 Submenu: IP Addresses and Names
-Version: 202411280056-1
+Version: 202412050058-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -16375,7 +16297,7 @@ Build-Depends: golang/host
 
 Package: geoview
 Submenu: Web Servers/Proxies
-Version: 0.0.6-1
+Version: 0.0.9-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -16385,7 +16307,7 @@ Category: Network
 Repository: base
 Title: A geofile toolkit (geoview)
 Maintainer: snowie2000
-Source: geoview-0.0.6.tar.gz
+Source: geoview-0.0.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
